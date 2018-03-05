@@ -1,3 +1,15 @@
 .App {
-  width: 55vw;
+  width: 62vw;
   margin: auto; }
+  @media (max-width: 1680px) {
+    .App {
+      width: 70%; } }
+  @media (max-width: 1280px) {
+    .App {
+      width: 94%; } }
+  @media (max-width: 960px) {
+    .App {
+      width: 94%; } }
+  @media (max-width: 1280px) {
+    .App {
+      width: 94%; } }

@@ -5,6 +5,7 @@ import './dashboard.css'
 
 // components
 import NavBar from '../../common/navbar/NavBar.component';
+import Search from '../../components/search/Search.component'
 
 class DashBoard extends Component {
 render() {
@@ -12,12 +13,12 @@ render() {
     <div>
       <NavBar />
       <div className="dashboard-container"> 
-      <div className="search-container">
+      <Search />
       </div>
-       </div>
 
     </div>
   )
 }
 }
+
 export default DashBoard;
