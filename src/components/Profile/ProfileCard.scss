@@ -1,0 +1,87 @@
+.profile-card {
+    display: flex;
+    .card {
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 60rem;
+        height: 19rem;
+        border-radius: 5px;
+        border: 1px solid #e3edf0;
+
+        .card-header {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+            border-right: 1px solid #f0f0f0;
+            width: 30rem;
+
+            .card-header,
+            h1 {
+                box-shadow: none;
+                font-size: 18px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 1em;
+
+            }
+        }
+        .result-body {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f0f0f0;
+            padding-left: 1rem;
+            width: 100%;
+            padding-top: 1rem;
+            
+            .pic {
+                height: 6.5rem;
+                width: 6.5rem;
+            }
+        }
+        .result-section {
+            width: 11.5rem;
+
+            .progress-bar {
+                display: flex;
+                flex-direction: column;
+                padding-left: 2rem;
+
+                .progress-name {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #45afe4;
+                }
+                .progress-count {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #45afe4;
+                    margin-left: auto;
+                }
+                .progress-graph {
+                    margin-top: 1rem;
+
+                }
+            }
+            .result-rating {
+                display: flex;
+                flex-direction: column;
+                padding-left: 2rem;
+
+                .result-rating-values {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #45afe4;
+                    margin-left: auto;
+                    padding-bottom: 1rem;
+
+                    .stars {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }        
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Dropdown,Button, Checkbox, Icon, Rating } from 'semantic-ui-react';
+import { Dropdown, Button, Checkbox, Icon, Rating, Divider } from 'semantic-ui-react';
 
 // styles
 import './SearchFilter.css';
@@ -21,6 +21,7 @@ class SearchFilter extends Component {
         <div className="search-radius">
           <span className="radius-title">search radius </span>
         </div>
+
         <div className="search-radius">
           <span className="radius-title"> Provide Gender </span>
           <Dropdown text="Any Gender" selection options={options} simple item />
@@ -38,7 +39,7 @@ class SearchFilter extends Component {
         </div>
         <div className="filter-checkbox">
           <Checkbox label={{ children: 'BOARD CERTIFIED' }} />
-          </div>
+        </div>
       </div>
     );
   }

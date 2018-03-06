@@ -1,5 +1,4 @@
 .search-container {
-  height: 5rem;
   width: 60vw;
 
   @media (max-width: 1680px) {
@@ -18,7 +17,7 @@
     width: 97%
   
   }
-}
+
 
 .search-terms {
   display: flex;
@@ -51,6 +50,7 @@
     box-shadow: 0 0px 0px 0 rgba(34,36,38,.15)!important;
     padding: 2em 1em !important;
 
+
     .ui.button {
     color: #fff;
     background-color: #3798ec;
@@ -64,3 +64,4 @@
     }
 }
 
+}
