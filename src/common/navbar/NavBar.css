@@ -28,19 +28,17 @@
       padding-left: 2rem;
       display: flex;
       align-items: center; }
-      .nav-bar .right-nav-section .menu_buttons .menu_demo_btn .ui.button {
-        border-radius: 1.5rem;
+      .nav-bar .right-nav-section .menu_buttons .menu_dropdown_btn {
+        vertical-align: top;
+        font-weight: 600;
         text-transform: uppercase;
+        color: #fff;
         font-size: 1rem;
-        font-weight: 400;
         letter-spacing: 0.5px;
-        text-align: center;
-        line-height: 1;
-        background-color: #21dbf2;
-        color: #fff; }
+        cursor: pointer !important; }
       .nav-bar .right-nav-section .menu_buttons .menu_login_btn {
         padding-left: 1.5rem; }
-        .nav-bar .right-nav-section .menu_buttons .menu_login_btn .ui.basic.button {
+        .nav-bar .right-nav-section .menu_buttons .menu_login_btn .ui.button {
           border-radius: 1.5rem;
           text-transform: uppercase;
           font-size: 1rem;
@@ -48,5 +46,5 @@
           letter-spacing: 0.5px;
           text-align: center;
           line-height: 1;
-          color: #fff !important;
-          border: 1.5px solid #fff; }
+          background-color: #21dbf2;
+          color: #fff; }

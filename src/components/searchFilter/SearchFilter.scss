@@ -1,13 +1,23 @@
 .filter-container {
-
-}
-
-.filter-text {
     display: flex;
-    justify-content: flex-start;
     flex-direction: row;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    align-items: center;
+    
 
+    .filter-text {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .search-radius {
+        padding-left: 7.5px;
+         padding-right: 7.5px;
+
+        .radius-title {
+            padding: 0;
+            font-size: 14px;
+            color: #8e8f8f;
+        }
+    }
 }

@@ -27,15 +27,23 @@
   justify-content: space-between;
 
   .specialty {
+    display: flex;
+    flex-direction: column;
+
     .specialty-text {
-      text-indent: 5px;
       font-size: 13px;
-      height: 20px;
-      line-height: 20px;
+      color: #14a9e1;
+      font-weight: 600;
       letter-spacing: 0.4px;
       text-transform: capitalize
     }
   }
+  .search-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
 
 }
 .ui.segment {
@@ -52,7 +60,8 @@
     font-size: 1rem;
     text-transform: uppercase;
     line-height: 1;
-    margin-right: 3rem
+    margin-right: rem;
+    margin-top: 1rem;
     }
 }
 

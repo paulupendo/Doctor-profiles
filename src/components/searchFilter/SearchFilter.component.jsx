@@ -12,7 +12,10 @@ class SearchFilter extends Component {
           <Icon color="blue" name="filter" />
           <span> Filter : </span>
         </div>
-        <div className="search-radius" />
+        <div className="search-radius">
+        <span className="radius-title">search radius </span>
+        
+        </div>
       </div>
     );
   }

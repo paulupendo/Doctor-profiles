@@ -21,18 +21,23 @@ class Search extends Component {
               <span className="specialty-text"> specialty </span>
               <Dropdown text="Specialty" search selection options={options} simple item />
             </div>
-            <div className="loaction">
+            <div className="specialty">
+              <span className="specialty-text"> Location </span>
               <Dropdown text="New York, NY" search selection options={options} simple item />
             </div>
-            <div className="insurance-carrier">
+            <div className="specialty">
+              <span className="specialty-text"> Insurance Carrier </span>
               <Dropdown text="Any Carrier" search selection options={options} simple item />
             </div>
-            <div className="insurance-plan">
-              <Dropdown text="Any Plan" search selection options={options} simple item />
+            <div className="specialty">
+              <span className="specialty-text"> Insurance Plan </span>
+              <Dropdown disabled text="Any Plan" search selection options={options} simple item />
             </div>
-            <Button>
-              <Icon name="search" />New search
-            </Button>
+            <div className="search-btn">
+              <Button>
+                <Icon name="search" />New search
+              </Button>
+            </div>
           </div>
           <Divider section />
           <SearchFilter />
