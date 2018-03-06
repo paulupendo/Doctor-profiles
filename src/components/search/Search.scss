@@ -19,6 +19,25 @@
   
   }
 }
+
+.search-terms {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .specialty {
+    .specialty-text {
+      text-indent: 5px;
+      font-size: 13px;
+      height: 20px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      text-transform: capitalize
+    }
+  }
+
+}
 .ui.segment {
     background-color: #edf4f8 !important;
     border: 0 !important;
@@ -27,7 +46,7 @@
 
     .ui.button {
     color: #fff;
-    background-color: #0395d3;
+    background-color: #3798ec;
     padding: 12px 15px 12px 15px;
     letter-spacing: 0.5px;
     font-size: 1rem;
