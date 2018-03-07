@@ -14,9 +14,13 @@ class DashBoard extends Component {
     return (
       <div>
         <NavBar />
+
         <div className="dashboard-container">
           <Search />
           <ProfileList />
+                    <ProfileList />
+                              <ProfileList />
+
         </div>
       </div>
     );
