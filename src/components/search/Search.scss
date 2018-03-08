@@ -14,6 +14,7 @@ position: sticky;
   .specialty {
     display: flex;
     flex-direction: column;
+    z-index: 12;
 
     .specialty-text {
       font-size: 13px;
