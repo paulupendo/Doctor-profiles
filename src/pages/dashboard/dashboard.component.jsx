@@ -6,7 +6,7 @@ import './dashboard.css';
 
 // Components
 import NavBar from '../../common/navbar/NavBar.component';
-import Search from '../../components/search/Search.component';
+import Search from '../../components/Search/Search.component';
 import ProfileList from '../../components/Profile/ProfileList.component';
 
 class DashBoard extends Component {

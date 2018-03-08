@@ -4,7 +4,7 @@ import { Dropdown, Menu, Divider, Button, Segment, Icon } from 'semantic-ui-reac
 // styles
 import './Search.css';
 
-import SearchFilter from '../searchFilter/SearchFilter.component';
+import SearchFilter from '../SearchFilter/SearchFilter.component';
 
 const options = [
   { key: 'AL', value: 'AL', text: 'Alabama' },
