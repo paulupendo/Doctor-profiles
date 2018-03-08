@@ -40,7 +40,7 @@
         .result-body {
             display: flex;
             flex-direction: row;
-            padding-bottom: 1rem;
+            padding-bottom: 3rem;
             border-bottom: 1px solid #f0f0f0;
             padding-left: 1rem;
             width: 100%;
@@ -52,10 +52,12 @@
         }
         .result-section {
             width: 11.5rem;
+
             .progress-bar {
                 display: flex;
                 flex-direction: column;
                 padding-left: 2rem;
+
                 .progress-name {
                     font-size: 1rem;
                     font-weight: 400;

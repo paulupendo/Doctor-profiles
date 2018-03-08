@@ -1,66 +1,67 @@
 .nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+
+  .left-nav-section {
+        
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     align-items: center;
 
-    .left-nav-section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        .logo {
-            height: 3rem;
-            margin: auto;
-        }
+    .logo {
+        height: 3rem;
+        margin: auto;
     }
-    .right-nav-section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: auto;
+}
+  .right-nav-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
 
-        .menu {
-            vertical-align: top;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #fff;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            cursor: pointer !important;
-        }
+      .menu {
+      vertical-align: top;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #15A9E1;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      cursor: pointer !important;
+      }
 
-        .menu_buttons {
-            padding-left: 2rem;
-            display: flex;
-            align-items: center;
+    .menu_buttons {
+      padding-left: 2rem;
+      display: flex;
+      align-items: center;
 
-            .menu_dropdown_btn {
-                vertical-align: top;
-                font-weight: 600;
-                text-transform: uppercase;
-                color: #fff;
-                font-family: 'Lato', sans-serif;
-                font-size: 1rem;
-                letter-spacing: 0.5px;
-                cursor: pointer !important;
-            }
-            .menu_login_btn {
-                padding-left: 1.5rem;
-                
-                .ui.button {
-                    border-radius: 1.5rem;
-                    text-transform: uppercase;
-                    font-size: 1rem;
-                    font-weight: 400;
-                    letter-spacing: 0.5px;
-                    text-align: center;
-                    line-height: 1;
-                    background-color: #21dbf2;
-                    color: #fff;
-                }
-            }
-        }
+      .menu_dropdown_btn {
+        vertical-align: top;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #15A9E1;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        cursor: pointer !important;
     }
+          .menu_login_btn {
+              padding-left: 1.5rem;
+              
+            .ui.button {
+              border-radius: 1.5rem;
+              text-transform: uppercase;
+              font-size: 1rem;
+              font-weight: 400;
+              letter-spacing: 0.5px;
+              text-align: center;
+              line-height: 1;
+              background-color: #21dbf2;
+              color: #fff;
+          }
+        }
+      }
+  }
 }

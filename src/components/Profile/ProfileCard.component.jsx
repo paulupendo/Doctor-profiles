@@ -31,10 +31,6 @@ class ProfileCard extends Component {
                   <Progress color="blue" percent={100} size="tiny" />
                 </span>
               </div>
-              <div className="result-rating">
-                <span className="result-rating-values">5/5 </span>
-                <Rating icon="star" defaultRating={5} maxRating={5} size="huge" />
-              </div>
             </div>
             <div className="result-location">
               <List>

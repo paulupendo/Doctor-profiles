@@ -1,20 +1,49 @@
 .filter-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
+  align-items: center; }
   .filter-container .filter-text {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px; }
   .filter-container .search-radius {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column; }
-    .filter-container .search-radius .ui.selection.dropdown {
-      min-width: 7rem; }
     .filter-container .search-radius .radius-title {
       padding-bottom: 0.5rem;
       font-size: 14px;
-      color: #8e8f8f; }
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif; }
+  .filter-container .filter-gender {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column; }
+    .filter-container .filter-gender .ui.selection.dropdown {
+      min-width: 7rem; }
+    .filter-container .filter-gender .gender-text {
+      font-size: 12px;
+      font-weight: 100;
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif; }
+  .filter-container .filter-language {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column; }
+    .filter-container .filter-language .language-text {
+      font-size: 12px;
+      font-weight: 100;
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif; }
+  .filter-container .filter-points {
+    padding-left: 2rem;
+    display: flex; }
+    .filter-container .filter-points .points-text {
+      padding-bottom: 0.5rem;
+      font-size: 14px;
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif; }
+  .filter-container .filter-checkbox {
+    padding-left: 2rem;
+    display: flex;
+    font-size: 2px; }

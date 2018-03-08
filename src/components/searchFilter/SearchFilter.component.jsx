@@ -22,23 +22,16 @@ class SearchFilter extends Component {
           <span className="radius-title">search radius </span>
         </div>
 
-        <div className="search-radius">
-          <span className="radius-title"> Provide Gender </span>
+        <div className="filter-gender">
+          <span className="gender-text"> Provide Gender </span>
           <Dropdown text="Any Gender" selection options={options} simple item />
         </div>
-        <div className="search-radius">
-          <span className="radius-title"> Languages Spoken </span>
+        <div className="filter-language">
+          <span className="language-text"> Languages Spoken </span>
           <Dropdown text="Any Language" selection options={options} simple item />
         </div>
-        <div className="search-radius">
-          <span className="radius-title">profile points </span>
-        </div>
-        <div className="search-radius">
-          <span className="radius-title"> Min rating </span>
-          <Rating icon="star" defaultRating={3} maxRating={5} size="huge" />
-        </div>
-        <div className="filter-checkbox">
-          <Checkbox label={{ children: 'BOARD CERTIFIED' }} />
+        <div className="filter-points">
+          <span className="points-text">profile points </span>
         </div>
       </div>
     );

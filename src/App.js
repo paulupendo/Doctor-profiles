@@ -17,6 +17,7 @@ class App extends Component {
             <Route exact path="/" component={DashBoard} />
           </div>
         </div>
+        
       </Router>
     );
   }

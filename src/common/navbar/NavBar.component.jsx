@@ -12,7 +12,7 @@ const options = [
 
 class NavBar extends Component {
   render() {
-    const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520253425/AlemHealthLogo_1.svg';
+    const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520499609/AlemHealthLogo.svg';
     return (
       <div className="nav-bar">
         <div className="left-nav-section">
