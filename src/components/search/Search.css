@@ -11,7 +11,8 @@
     justify-content: space-between; }
     .search-container .search-terms .specialty {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      z-index: 12; }
       .search-container .search-terms .specialty .specialty-text {
         font-size: 13px;
         color: #14a9e1;
