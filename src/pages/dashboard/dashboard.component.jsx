@@ -18,9 +18,10 @@ class DashBoard extends Component {
         <div className="dashboard-container">
           <Search />
           <ProfileList />
-                    <ProfileList />
-                              <ProfileList />
-
+          <ProfileList />
+          <ProfileList />
+              <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
         </div>
       </div>
     );
