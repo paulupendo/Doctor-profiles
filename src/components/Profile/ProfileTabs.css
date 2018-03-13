@@ -1,0 +1,17 @@
+.profile-tab .ui.menu {
+  border: none;
+  background: #149fdd; }
+  .profile-tab .ui.menu a {
+    color: #fff; }
+  .profile-tab .ui.menu .item:hover {
+    background: #149fdd;
+    color: #f5f7f8; }
+  .profile-tab .ui.menu .active.item {
+    color: #0075bc;
+    background: #f5f7f8; }
+    .profile-tab .ui.menu .active.item:hover {
+      color: #0075bc;
+      background: #f5f7f8; }
+
+.profile-tab .ui.segment[class*="bottom attached"] {
+  margin-top: -1rem; }

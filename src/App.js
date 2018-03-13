@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // styles
-import './App.css';
+import "./App.css";
 
 // components
-import DashBoard from './pages/dashboard/dashboard.component';
+import DashBoard from "./pages/dashboard/dashboard.component";
+import DoctorProfile from "./pages/doctorProfile/doctorProfile.component";
 
 class App extends Component {
   render() {
@@ -14,7 +15,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="App-header">
-            <Route exact path="/" component={DashBoard} />
+            <Switch>
+              <Route exact path="/" component={DashBoard} />
+              <Route path="/doctor-profile" component={DoctorProfile} /> /**
+              Should have a doctor slug later on */
+            </Switch>
           </div>
         </div>
       </Router>
