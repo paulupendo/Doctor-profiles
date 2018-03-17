@@ -1,37 +1,42 @@
-import React, { Component } from "react";
-import { Tab } from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Tab } from 'semantic-ui-react';
 
 // components
-import SummaryTab from "./SummaryTab.component";
+import SummaryTab from './SummaryTab.component';
+import LocationTab from './LocationTab.component';
 
 // styles
-import "./ProfileTabs.css";
+import './ProfileTabs.css';
 
 const panes = [
   {
-    menuItem: "Summary",
+    menuItem: 'Summary',
     render: () => (
       <Tab.Pane>
         <SummaryTab />
       </Tab.Pane>
-    )
+    ),
   },
   {
-    menuItem: "Locations",
-    render: () => <Tab.Pane>Tab 2 Content</Tab.Pane>
+    menuItem: 'Locations',
+    render: () => (
+      <Tab.Pane>
+        <LocationTab />
+      </Tab.Pane>
+    ),
   },
   {
-    menuItem: "Accepted Insurance",
-    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>
+    menuItem: 'Accepted Insurance',
+    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
   },
   {
-    menuItem: "Service and fees",
-    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>
+    menuItem: 'Service and fees',
+    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
   },
   {
-    menuItem: "Reviews",
-    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>
-  }
+    menuItem: 'Reviews',
+    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
+  },
 ];
 
 export default class ProfileTab extends Component {
