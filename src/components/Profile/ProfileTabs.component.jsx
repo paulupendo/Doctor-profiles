@@ -4,6 +4,7 @@ import { Tab } from 'semantic-ui-react';
 // components
 import SummaryTab from './SummaryTab.component';
 import LocationTab from './LocationTab.component';
+import InsuranceTab from './InsuranceTab.component';
 
 // styles
 import './ProfileTabs.css';
@@ -27,7 +28,11 @@ const panes = [
   },
   {
     menuItem: 'Accepted Insurance',
-    render: () => <Tab.Pane>Tab 3 Content</Tab.Pane>,
+    render: () => (
+      <Tab.Pane>
+        <InsuranceTab />
+      </Tab.Pane>
+    ),
   },
   {
     menuItem: 'Service and fees',
