@@ -7,7 +7,6 @@ export default class GoogleMap extends Component {
     super(props);
   }
   componentDidMount() {
-    console.log('props\n\n', this.props)
     let doctor_map = new window.google.maps.Map(
       document.getElementById("doctor-geo"),
       {

@@ -7,20 +7,32 @@ import Search from "../../components/Search/Search.component";
 import ProfileList from "../../components/Profile/ProfileList.component";
 import GoogleMap from "../../components/Profile/GoogleMap.component";
 
-class DashBoard extends Component {
+// styles
+import "./dashboard.css";
 
+class DashBoard extends Component {
   render() {
-  const mapStyle = {
-    width: '30rem',
-    height: '10rem',
-  }
+    const mapStyle = {
+      width: "24rem",
+      height: "20rem",
+      marginRight: "1rem",
+      border: "3px solid whitesmoke",
+      borderRadius: "3px"
+    };
+
     return (
       <div>
         <NavBar />
         <div className="dashboard-container">
           <Search />
-          <GoogleMap style={mapStyle} />
-          <ProfileList history={this.props.history} />
+          <div className="flex-row">
+            <div className="profile-tabs">
+              <ProfileList history={this.props.history} />
+            </div>
+            <div>
+              <GoogleMap style={mapStyle} />
+            </div>
+          </div>
         </div>
       </div>
     );

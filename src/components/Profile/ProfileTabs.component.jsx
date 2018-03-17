@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import { Tab } from "semantic-ui-react";
 
+// components
+import SummaryTab from "./SummaryTab.component";
+
+// styles
 import "./ProfileTabs.css";
 
 const panes = [
   {
     menuItem: "Summary",
-    render: () => <Tab.Pane>Tab 1 Content</Tab.Pane>
+    render: () => (
+      <Tab.Pane>
+        <SummaryTab />
+      </Tab.Pane>
+    )
   },
   {
     menuItem: "Locations",
