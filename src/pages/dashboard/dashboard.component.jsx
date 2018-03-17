@@ -13,7 +13,7 @@ import "./dashboard.css";
 class DashBoard extends Component {
   render() {
     const mapStyle = {
-      width: "24rem",
+      width: "20rem",
       height: "20rem",
       marginRight: "1rem",
       border: "3px solid whitesmoke",

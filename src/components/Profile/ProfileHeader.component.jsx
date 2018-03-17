@@ -5,7 +5,7 @@ import './ProfileHeader.css';
 
 const ProfileHeader = props => {
   const handleClick = () => {
-    props.history.push('/');
+    props.history.push('/find-a-doctor');
   };
 
   return (

@@ -1,0 +1,33 @@
+.services-container {
+    i {
+        color: #15a9e1;
+    }
+    li {
+        font-size: .9rem;
+    }
+    .background-fill {
+        background: #fff;
+        padding: 1rem;
+    }
+    .background-fill-next {
+        background: #fff;
+        padding: 1rem;
+        margin-top: 1rem;
+        h5 {
+            span {
+                font-weight: normal;
+                margin-left: .4rem;
+            }
+        }
+    }
+    .flex-row {
+        display: flex;
+        text-align: center;
+        font-size: .9rem;
+        width: 40%;
+        i {
+            font-size: 1.5rem;
+            color: black;
+        }
+    }
+}
