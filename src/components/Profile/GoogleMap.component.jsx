@@ -7,15 +7,17 @@ export default class GoogleMap extends Component {
     super(props);
   }
   componentDidMount() {
-    console.log('props\n\n', this.props);
-    let doctor_map = new window.google.maps.Map(document.getElementById('doctor-geo'), {
-      center: {
-        lat: 40.7593941,
-        lng: -73.96977950000002
-      },
-      zoom: 8,
-      mapTypeId: window.google.maps.MapTypeId.ROADMAP
-    });
+    let doctor_map = new window.google.maps.Map(
+      document.getElementById("doctor-geo"),
+      {
+        center: {
+          lat: 40.7593941,
+          lng: -73.96977950000002
+        },
+        zoom: 8,
+        mapTypeId: window.google.maps.MapTypeId.ROADMAP
+      }
+    );
 
     let marker = new window.google.maps.Marker({
       position: {

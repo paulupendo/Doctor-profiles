@@ -1,0 +1,13 @@
+.location-container {
+  background: #fff;
+  padding: 1rem; }
+  .location-container i {
+    color: #15a9e1; }
+  .location-container img {
+    width: 8rem; }
+  .location-container .affiliate-info {
+    display: flex; }
+    .location-container .affiliate-info .right {
+      margin-left: 0.8rem; }
+  .location-container a {
+    cursor: pointer; }
