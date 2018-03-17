@@ -1,0 +1,8 @@
+.ui.icon.button.back-to-results-button {
+  float: right;
+  color: #0089cb;
+  background: #eaf2f7;
+  width: 12rem; }
+
+.ui.icon.button.back-to-results-button:hover {
+  background: #e5ebee; }

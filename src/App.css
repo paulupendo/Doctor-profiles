@@ -1,0 +1,27 @@
+.App {
+  width: 65vw;
+  margin: auto; }
+  @media (max-width: 1680px) {
+    .App {
+      width: 70%; } }
+  @media (max-width: 1280px) {
+    .App {
+      width: 94%; } }
+  @media (max-width: 960px) {
+    .App {
+      width: 94%; } }
+  @media (max-width: 1280px) {
+    .App {
+      width: 94%; } }
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem; }
+
+.flex-row {
+  display: flex;
+  justify-content: space-between; }

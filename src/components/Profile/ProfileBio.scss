@@ -1,0 +1,158 @@
+.profile-bio-container {
+    padding-top: 3rem;
+    margin-left: 1rem;
+    .bio-summary {
+        display: flex;
+    }
+    .bio-left {
+        width: 14%;
+        flex-direction: column;
+        text-align: center;
+        img {
+            width: 9rem;
+            height: 9rem;
+        }
+        .profile-points {
+            background: #f5f7f8;
+            margin-top: 1rem;
+            border-radius: 3px;
+            padding: 0.6rem 0.2rem 4.6rem 0.1rem;
+            font-size: 0.9rem;
+            font-weight: 900;
+            .progress-bar {
+                width: 80%;
+                margin: 0.2rem 1rem 0.5rem 1.2rem;
+            }
+            .about-section {
+                font-size: 0.8rem;
+                margin-top: -0.4rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .bio-mid {
+        width: 66%;
+        margin-left: 2rem;
+        .ui.segment {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+        }
+        .ui.teal.label {
+            background: #038bcb !important;
+        }
+        .ui.teal.ribbon.label {
+            border-color: #038bcb !important;
+        }
+        .ui[class*="right ribbon"].label {
+            left: calc(100% + 1rem + 0.2em);
+        }
+        .info-top {
+            margin-top: -1.89rem;
+            padding: 1.5rem 1.8rem 1.5rem 1.6rem;
+            background: #f6f8f9;
+            h1.ui.header {
+                color: #364c53;
+                margin: 0;
+            }
+            span {
+                font-size: 1.2rem;
+            }
+        }
+        .highlights {
+            background: #e8eef0;
+            padding: 1rem 1.8rem;
+            .sub-container {
+                display: flex;
+                justify-content: space-between;
+                div[id="left"] {
+                    width: 50%;
+                }
+                div[id="right"] {
+                    margin-left: 2rem;
+                    width: 50%;
+                }
+            }
+            h3.ui.header {
+                color: #364c53;
+            }
+            h4 {
+                font-size: 1.3rem;
+                color: #364c53;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            i {
+                font-size: 0.9em;
+                margin-right: 0.7rem;
+                color: #038bcb;
+            }
+            li {
+                list-style-type: none;
+                margin-top: -0.5rem;
+                font-size: 0.9rem;
+            }
+            li::before {
+                content: ". ";
+                color: #038bcb;
+                margin-left: 1.2rem;
+                font-size: 3rem;
+            }
+            p {
+                width: 100%;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+            }
+            a {
+                cursor: pointer;
+            }
+            .speech-bubble {
+                background: white;
+                padding: 1rem;
+                margin-bottom: 0.3rem;
+                border: 1px solid transparent;
+                border-radius: 17px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 4%;
+                    width: 0;
+                    height: 0;
+                    border: 24px solid transparent;
+                    border-top-color: #fff;
+                    border-bottom: 0;
+                    border-left: 0;
+                    margin-bottom: -1.5rem;
+                }
+            }
+            span {
+                margin-left: 3rem;
+                color: darkslategrey;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .bio-right {
+        margin-left: 2rem;
+        .ui.icon.button {
+            width: 13rem;
+            color: white;
+            background: #0080c4;
+            &:hover {
+                background: #0288c7;
+            }
+        }
+        div {
+            font-size: 0.8rem;
+            margin-right: 0.7rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .office-times {
+                flex-direction: column;
+            }
+        }
+    }
+}
