@@ -1,0 +1,109 @@
+.site-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #ffffff!important;
+  
+  .site-jumbotron {
+    background-color: #139fdc;
+    width: 100%;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+
+    .site-nav-bar {
+      display: flex;
+      flex-direction: row;
+      padding-top: 2rem;
+      padding-right: 141px;
+      img {
+        height: 3rem;
+        margin-left: 139px;
+      }
+      .menulist {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          font-size: 15px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.2;
+          text-align: left;
+          color: #ffffff;
+        }
+        li {
+          margin-left: 58px;
+          cursor: pointer;
+        }
+      } 
+    }
+    .site-header {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 156px;
+    }
+    h1 {
+      font-size: 44px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      color: #e1f5fe;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+  .finder-input {
+    margin: 0 auto;
+    padding-top: 4rem;
+    .ui.input {
+      padding-right: 1rem;
+    }
+    .ui.input>input {
+      background: #f1f2f4;
+      border-radius: 0rem;
+      border: 1px solid #f1f2f4;
+      color: #aaabac;
+      font-size: 17px;
+      font-family: HelveticaNeue;
+      line-height: 1.71;
+    }
+    ui.search.dropdown>input.search {
+      background: red !important;
+      border-radius: 0rem;
+      border: 1px solid #f1f2f4 !important;
+    }
+  }
+  .find-profile-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin: 0 auto;
+    .ui.button {
+      color: #ffffff;
+      background-color: #139fdc;
+      border: 1px solid #f1f2f4 !important;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: 300;
+      font-size: 17px;
+      margin-right: rem;
+      margin-top: 1rem;
+      border-radius: 0rem;
+  }
+  }
+}

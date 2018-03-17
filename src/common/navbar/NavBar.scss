@@ -1,9 +1,23 @@
 .nav-bar {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   align-items: center;
+  width: 65vw;
+  margin: auto;
+  @media (max-width: 1680px) {
+    width: 70%
+}
+  @media (max-width: 1280px) {
+    width: 94%
+}
+   @media (max-width: 960px) {
+    width: 94%
+   }
+   @media (max-width: 1280px) {
+    width: 94%
+}
 
   .left-nav-section {
         
@@ -65,3 +79,23 @@
       }
   }
 }
+
+// .center-section {
+//   margin-left: 3rem;
+//   .menu-list {
+//     display: flex;
+//     list-style: none;
+//     flex-direction: row;
+//     font-weight: 400;
+//     text-transform: uppercase;
+//     letter-spacing: .075em;
+//     color: #364343;
+//     padding-right: 2rem;
+//     font-size: 13px;
+
+//   }
+//   li {
+//     margin-left: 4rem;
+//     cursor: pointer;
+//   }
+// }

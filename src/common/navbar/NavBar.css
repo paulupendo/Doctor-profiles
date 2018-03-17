@@ -1,9 +1,23 @@
 .nav-bar {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  align-items: center; }
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  width: 65vw;
+  margin: auto; }
+  @media (max-width: 1680px) {
+    .nav-bar {
+      width: 70%; } }
+  @media (max-width: 1280px) {
+    .nav-bar {
+      width: 94%; } }
+  @media (max-width: 960px) {
+    .nav-bar {
+      width: 94%; } }
+  @media (max-width: 1280px) {
+    .nav-bar {
+      width: 94%; } }
   .nav-bar .left-nav-section {
     display: flex;
     flex-direction: row;

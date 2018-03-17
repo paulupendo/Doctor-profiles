@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // styles
-import "./ProfileList.scss";
+import './ProfileList.scss';
 
 // Components
-import ProfileCard from "./ProfileCard.component";
+import ProfileCard from './ProfileCard.component';
 
 class ProfileList extends Component {
   render() {

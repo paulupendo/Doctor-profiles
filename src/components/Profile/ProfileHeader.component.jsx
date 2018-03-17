@@ -1,11 +1,11 @@
-import React from "react";
-import { Button, Icon, Breadcrumb } from "semantic-ui-react";
+import React from 'react';
+import { Button, Icon, Breadcrumb } from 'semantic-ui-react';
 
-import "./ProfileHeader.css";
+import './ProfileHeader.css';
 
 const ProfileHeader = props => {
   const handleClick = () => {
-    props.history.push("/");
+    props.history.push('/');
   };
 
   return (
@@ -17,12 +17,7 @@ const ProfileHeader = props => {
         <Breadcrumb.Divider />
         <Breadcrumb.Section active>Dr. Sammy Chitayat </Breadcrumb.Section>
       </Breadcrumb>
-      <Button
-        icon
-        size="small"
-        className="back-to-results-button"
-        onClick={handleClick}
-      >
+      <Button icon size="small" className="back-to-results-button" onClick={handleClick}>
         <Icon name="reply" />
         Back To Results
       </Button>

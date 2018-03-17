@@ -1,23 +1,24 @@
 .App {
-  width: 65vw;
+  width: 100%;
   margin: auto; }
-  @media (max-width: 1680px) {
-    .App {
-      width: 70%; } }
-  @media (max-width: 1280px) {
-    .App {
-      width: 94%; } }
-  @media (max-width: 960px) {
-    .App {
-      width: 94%; } }
-  @media (max-width: 1280px) {
-    .App {
-      width: 94%; } }
 
 .dashboard-container {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   height: 100%;
-  width: 100%;
+  width: 65vw;
+  margin: auto;
   padding-top: 2rem; }
+  @media (max-width: 1680px) {
+    .dashboard-container {
+      width: 70%; } }
+  @media (max-width: 1280px) {
+    .dashboard-container {
+      width: 94%; } }
+  @media (max-width: 960px) {
+    .dashboard-container {
+      width: 94%; } }
+  @media (max-width: 1280px) {
+    .dashboard-container {
+      width: 94%; } }

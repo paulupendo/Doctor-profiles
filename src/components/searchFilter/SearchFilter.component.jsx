@@ -1,26 +1,19 @@
-import React, { Component } from "react";
-import {
-  Dropdown,
-  Button,
-  Checkbox,
-  Icon,
-  Rating,
-  Divider
-} from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Dropdown, Button, Checkbox, Icon, Rating, Divider } from 'semantic-ui-react';
 
 // styles
-import "./SearchFilter.css";
+import './SearchFilter.css';
 
 const options = [
-  { key: "AL", value: "AL", text: "Alabama" },
-  { key: 2, text: "Choice 2", value: 2 },
-  { key: 3, text: "Choice 3", value: 3 }
+  { key: 'AL', value: 'AL', text: 'Alabama' },
+  { key: 2, text: 'Choice 2', value: 2 },
+  { key: 3, text: 'Choice 3', value: 3 }
 ];
 
 const genderOptions = [
-  { key: 'male', value: 'MALE', text: 'Male'},
-  { key: 'female', value: 'FEMALE', text: 'Female'}
-]
+  { key: 'male', value: 'MALE', text: 'Male' },
+  { key: 'female', value: 'FEMALE', text: 'Female' }
+];
 
 class SearchFilter extends Component {
   render() {
@@ -41,13 +34,7 @@ class SearchFilter extends Component {
 
         <div className="filter-language">
           <span className="language-text"> Languages Spoken </span>
-          <Dropdown
-            text="Any Language"
-            selection
-            options={options}
-            simple
-            item
-          />
+          <Dropdown text="Any Language" selection options={options} simple item />
         </div>
 
         <div className="filter-points">

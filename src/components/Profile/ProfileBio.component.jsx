@@ -1,18 +1,9 @@
-import React, { Component } from "react";
-import {
-  Image,
-  Segment,
-  Progress,
-  Label,
-  Header,
-  Icon,
-  Button
-} from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Image, Segment, Progress, Label, Header, Icon, Button } from 'semantic-ui-react';
 
-import "./ProfileBio.css";
+import './ProfileBio.css';
 
-const image =
-  "http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg";
+const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
 
 export default class ProfileBio extends Component {
   render() {
@@ -53,10 +44,9 @@ export default class ProfileBio extends Component {
                       <Icon name="id card outline" /> Biography
                     </h4>
                     <p>
-                      Dr. Sammy Chitayat graduated from the University of Di
-                      Roma La Sapienza, Fac Di Med E Chirurgia, Roma, Italy in
-                      1973. He works in New York, NY and specializes in Internal
-                      Medicine - Geriatrics. Dr. C... <a>Read More</a>
+                      Dr. Sammy Chitayat graduated from the University of Di Roma La Sapienza, Fac Di Med E Chirurgia,
+                      Roma, Italy in 1973. He works in New York, NY and specializes in Internal Medicine - Geriatrics.
+                      Dr. C... <a>Read More</a>
                     </p>
                   </div>
                   <div id="right">
