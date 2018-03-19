@@ -8,7 +8,7 @@ const ServicesTab = () => {
   return (
     <div className="services-container">
       <div className="background-fill">
-        <Icon name="file text outline" /> Procedures & Treatments Offered{' '}
+        <Icon name="file text outline" /> Procedures & Treatments Offered
         <Divider />
         <div>
           <li>Arthritic Conditions</li>
