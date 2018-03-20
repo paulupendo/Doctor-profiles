@@ -20,8 +20,8 @@ class LandingPage extends Component {
               <ul>
                 <li>Products</li>
                 <li>Carrers</li>
-                <li>Login</li>
               </ul>
+            <Button> Login </Button>
             </div>
           </div>
           <div className="site-header">
