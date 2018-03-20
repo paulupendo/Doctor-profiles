@@ -4,8 +4,7 @@ import { Card, Icon, Progress, Rating, Button, List } from 'semantic-ui-react';
 // Styles
 import './ProfileCard.css';
 
-const image =
-  'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
+const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
 
 class ProfileCard extends Component {
   handleClick = () => {
@@ -41,9 +40,7 @@ class ProfileCard extends Component {
                 <List.Item>
                   <List.Icon name="location arrow" />
                   <List.Content>Main Location</List.Content>
-                  <List.Description>
-                    315 Madison Ave. Room 509 New York, New York 10017
-                  </List.Description>
+                  <List.Description>315 Madison Ave. Room 509 New York, New York 10017</List.Description>
                 </List.Item>
               </List>
             </div>
@@ -62,8 +59,7 @@ class ProfileCard extends Component {
                   <List.Icon name="doctor" />
                   <List.Content>Summary</List.Content>
                   <List.Description>
-                    Dr. Sammy Chitayat is a Board Certified practicing Internal
-                    Medicine ...READ MORE
+                    Dr. Sammy Chitayat is a Board Certified practicing Internal Medicine ...READ MORE
                   </List.Description>
                 </List.Item>
               </List>

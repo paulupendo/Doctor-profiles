@@ -9,7 +9,7 @@ import './App.css';
 import DashBoard from './pages/dashboard/dashboard.component';
 import DoctorProfile from './pages/doctorProfile/doctorProfile.component';
 import LandingPage from './pages/landingPage/landingPage.component';
-import FindProfile from './pages/findProfile/findProfile.component'
+import FindProfile from './pages/findProfile/findProfile.component';
 
 class App extends Component {
   render() {

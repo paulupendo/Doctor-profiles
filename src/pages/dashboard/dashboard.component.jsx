@@ -8,16 +8,16 @@ import ProfileList from '../../components/Profile/ProfileList.component';
 import GoogleMap from '../../components/Profile/GoogleMap.component';
 
 // styles
-import "./dashboard.css";
+import './dashboard.css';
 
 class DashBoard extends Component {
   render() {
     const mapStyle = {
-      width: "20rem",
-      height: "20rem",
-      marginRight: "1rem",
-      border: "3px solid whitesmoke",
-      borderRadius: "3px"
+      width: '20rem',
+      height: '20rem',
+      marginRight: '1rem',
+      border: '3px solid whitesmoke',
+      borderRadius: '3px'
     };
 
     return (

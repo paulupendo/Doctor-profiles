@@ -1,0 +1,27 @@
+.userlist {
+    clear: both;
+    margin: 20px 0;
+
+    ul {
+        padding-top: 1rem;
+        border-bottom: 1px solid #EEEEEE;
+        padding-bottom: 1rem;
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        img {
+            border-radius: 50%;
+        }
+        h2 {
+            color: #139fdc;
+            font-size: 15px;
+        }
+        .user-title {
+            margin-left: 1rem;
+            text-align: left;
+            align-items: center;
+        }
+    }
+}
