@@ -1,0 +1,20 @@
+.location-container {
+  background: #fff;
+  padding: 1rem;
+  i {
+    color: #15a9e1;
+  }
+  img {
+    width: 8rem;
+  }
+  .affiliate-info {
+    display: flex;
+    .right {
+      margin-left: 0.8rem;
+     
+    }
+  }
+  a {
+      cursor: pointer;
+  }
+}

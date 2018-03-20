@@ -68,7 +68,7 @@ class ProfileCard extends Component {
           </div>
           <div className="card-footer">
             <div className="result-phone">
-              <Icon name="phone" />
+              <Icon name="phone" flipped="horizontally"/>
               (201) 380-6924
             </div>
             <div className="profile-actions">
