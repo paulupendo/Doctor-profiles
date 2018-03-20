@@ -1,10 +1,10 @@
 .site-container {
-  display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #ffffff !important; }
   .site-container .site-jumbotron {
-    background-color: #139fdc;
+    background-image: url("http://res.cloudinary.com/dlqcyupez/image/upload/v1521288439/Web_1280_4.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 715px;
     display: flex;
@@ -13,10 +13,10 @@
       display: flex;
       flex-direction: row;
       padding-top: 2rem;
-      padding-right: 141px; }
+      padding-right: 4rem; }
       .site-container .site-jumbotron .site-nav-bar img {
-        height: 3rem;
-        margin-left: 139px; }
+        height: 2.5rem;
+        margin-left: 7rem; }
       .site-container .site-jumbotron .site-nav-bar .menulist {
         display: flex;
         flex-direction: row;
@@ -25,7 +25,7 @@
           list-style: none;
           display: flex;
           flex-direction: row;
-          font-size: 15px;
+          font-size: 13px;
           font-weight: 500;
           font-style: normal;
           font-stretch: normal;
@@ -42,6 +42,7 @@
       margin-top: 156px; }
     .site-container .site-jumbotron h1 {
       font-size: 44px;
+      text-align: center;
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
@@ -54,7 +55,7 @@
       font-stretch: normal;
       line-height: 1.2;
       letter-spacing: normal;
-      text-align: left;
+      text-align: center;
       color: #ffffff; }
   .site-container .finder-input {
     margin: 0 auto;
@@ -65,14 +66,17 @@
       background: #f1f2f4;
       border-radius: 0rem;
       border: 1px solid #f1f2f4;
-      color: #aaabac;
+      color: #444;
       font-size: 17px;
-      font-family: HelveticaNeue;
-      line-height: 1.71; }
-    .site-container .finder-input ui.search.dropdown > input.search {
-      background: red !important;
+      font-family: HelveticaNeue; }
+    .site-container .finder-input .ui.selection.dropdown {
+      background: #f1f2f4;
       border-radius: 0rem;
-      border: 1px solid #f1f2f4 !important; }
+      border: 1px solid #f1f2f4;
+      margin-right: 1rem;
+      color: #aaabac;
+      font-size: 16px;
+      font-family: HelveticaNeue; }
   .site-container .find-profile-btn {
     display: flex;
     justify-content: center;
@@ -81,11 +85,71 @@
     .site-container .find-profile-btn .ui.button {
       color: #ffffff;
       background-color: #139fdc;
-      border: 1px solid #f1f2f4 !important;
-      text-transform: uppercase;
+      text-transform: capitalize;
       line-height: 1;
       font-weight: 300;
       font-size: 17px;
       margin-right: rem;
       margin-top: 1rem;
       border-radius: 0rem; }
+  .site-container .section {
+    margin-top: 40px; }
+    .site-container .section .detail-section {
+      text-align: center; }
+      .site-container .section .detail-section h2 {
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        color: #444444; }
+  .site-container .content-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .site-container .content-section p {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #444444; }
+  .site-container .footer {
+    background-color: #fafafa;
+    padding: 100px 0 0 0; }
+    .site-container .footer .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 8rem; }
+      .site-container .footer .footer-content .nav-column {
+        margin: 0 4rem; }
+        .site-container .footer .footer-content .nav-column h4 {
+          color: #364343;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: .05em; }
+        .site-container .footer .footer-content .nav-column ul {
+          list-style: none;
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: .05em;
+          color: #828E8E;
+          text-align: left;
+          padding-top: 2rem;
+          padding-left: 0; }
+        .site-container .footer .footer-content .nav-column li {
+          cursor: pointer;
+          margin-bottom: 1rem; }
+  .site-container .site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #e3eded;
+    background-color: #fafafa;
+    padding: 40px 0;
+    color: #828e8e;
+    font-weight: 300; }
