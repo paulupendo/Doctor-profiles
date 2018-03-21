@@ -140,3 +140,40 @@
             line-height: 1;
             margin-right: rem;
             margin-top: 1rem; }
+
+.ui.active.modal {
+  margin-top: -24rem !important;
+  height: 50rem; }
+  .ui.active.modal .inner-container {
+    display: flex;
+    justify-content: space-between; }
+    .ui.active.modal .inner-container .content-left {
+      width: 60%;
+      margin-left: 2rem; }
+      .ui.active.modal .inner-container .content-left div[role="listbox"] {
+        margin-bottom: 1rem; }
+    .ui.active.modal .inner-container .content-right {
+      background: #F2F2F2;
+      border: 1px solid #F2F2F2;
+      border-radius: 2px;
+      padding: 1rem;
+      width: 26%;
+      margin-right: 2rem;
+      box-shadow: 1px 1px 4px gainsboro; }
+      .ui.active.modal .inner-container .content-right h5,
+      .ui.active.modal .inner-container .content-right p {
+        text-align: center; }
+      .ui.active.modal .inner-container .content-right div {
+        margin-top: 3rem;
+        text-align: left; }
+        .ui.active.modal .inner-container .content-right div div {
+          margin-top: 1.5rem;
+          font-size: .9rem; }
+          .ui.active.modal .inner-container .content-right div div h5 {
+            font-size: .8rem;
+            text-align: left; }
+
+.dimmed.dimmable > .ui.animating.dimmer,
+.dimmed.dimmable > .ui.visible.dimmer,
+.ui.active.dimmer {
+  display: flex !important; }

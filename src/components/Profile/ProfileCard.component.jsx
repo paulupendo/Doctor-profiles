@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
-import { Card, Icon, Progress, Rating, Button, List } from 'semantic-ui-react';
+import {
+  Card,
+  Icon,
+  Progress,
+  Rating,
+  Button,
+  List,
+  Modal,
+  Header,
+  Dropdown,
+} from 'semantic-ui-react';
 
 // Styles
 import './ProfileCard.css';
@@ -13,6 +23,35 @@ class ProfileCard extends Component {
   };
 
   render() {
+    const visitReasons = [
+      {
+        text: 'Initial Consultation',
+        value: 'Initial Consulation',
+        key: 'Initial Consulation',
+      },
+      {
+        text: 'Follow Up visit',
+        value: 'Follow Up visit',
+        key: 'Follow Up visit',
+      },
+    ];
+    const insuranceOptions = [
+      {
+        text: "I'm Paying",
+        value: "I'm Paying",
+        key: "I'm Paying",
+      },
+      {
+        text: 'Aetna',
+        value: 'Aetna',
+        key: 'Aetna',
+      },
+      {
+        text: 'Anthem',
+        value: 'Anthem',
+        key: 'Anthem',
+      },
+    ];
     return (
       <div className="profile-card">
         <div className="card">
@@ -76,9 +115,49 @@ class ProfileCard extends Component {
             </div>
             <div className="profile-actions">
               <div className="request-btn">
-                <Button icon>
-                  <Icon name="add to calendar" />Request Appointment
-                </Button>
+                <Modal
+                  trigger={
+                    <Button icon>
+                      <Icon name="add to calendar" />Request Appointment
+                    </Button>
+                  }
+                  closeIcon
+                >
+                  <Header icon="calendar" content="Dr. Sammy Chitaya" />
+                  <Modal.Content>
+                    <div className="inner-container">
+                      <div className="content-left">
+                        <Dropdown
+                          placeholder="Select a reason for you visit"
+                          fluid
+                          selection
+                          options={visitReasons}
+                        />
+                        <Dropdown
+                          placeholder="Select your insurance company"
+                          fluid
+                          selection
+                          options={insuranceOptions}
+                        />
+                      </div>
+                      <div className="content-right">
+                        <h5>Sammy Chitayat, MD</h5>
+
+                        <p>315 Madison Ave. Room 509, New York</p>
+
+                        <div>
+                          <div>
+                            <h5>PROVIDER</h5> Charles Polak
+                          </div>
+                          <div>
+                            <h5>SPECIALTY</h5> Internal Medicine
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Modal.Content>
+                 
+                </Modal>
               </div>
               <div className="view-profile-btn">
                 <Button icon onClick={this.handleClick}>
