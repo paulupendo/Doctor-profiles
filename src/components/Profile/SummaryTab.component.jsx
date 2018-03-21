@@ -4,8 +4,7 @@ import Tab, { Icon, Divider, Table, Button } from 'semantic-ui-react';
 // styles
 import './SummaryTab.css';
 
-const image =
-  'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
+const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
 
 export default class SummaryTab extends Component {
   render() {
@@ -147,9 +146,7 @@ export default class SummaryTab extends Component {
             <h4 className="sub-h4">
               Accepts New Patients: <span>Yes</span>
             </h4>
-            <h4 className="sub-h4">
-              Chitayat specializes in treating the following types of patients:{' '}
-            </h4>
+            <h4 className="sub-h4">Chitayat specializes in treating the following types of patients: </h4>
             <li>Adults</li>
             <h4 className="sub-h4">
               Medical Philosophy: <span>Traditional Medicine</span>

@@ -17,7 +17,7 @@ const panes = [
       <Tab.Pane>
         <SummaryTab />
       </Tab.Pane>
-    ),
+    )
   },
   {
     menuItem: 'Locations',
@@ -25,7 +25,7 @@ const panes = [
       <Tab.Pane>
         <LocationTab />
       </Tab.Pane>
-    ),
+    )
   },
   {
     menuItem: 'Accepted Insurance',
@@ -33,7 +33,7 @@ const panes = [
       <Tab.Pane>
         <InsuranceTab />
       </Tab.Pane>
-    ),
+    )
   },
   {
     menuItem: 'Service and fees',
@@ -41,8 +41,8 @@ const panes = [
       <Tab.Pane>
         <ServicesTab />
       </Tab.Pane>
-    ),
-  },
+    )
+  }
 ];
 
 export default class ProfileTab extends Component {

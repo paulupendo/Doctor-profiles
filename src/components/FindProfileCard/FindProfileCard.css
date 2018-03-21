@@ -1,0 +1,20 @@
+.userlist {
+  clear: both;
+  margin: 20px 0; }
+  .userlist ul {
+    padding-top: 1rem;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 1rem; }
+  .userlist li {
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .userlist li img {
+      border-radius: 50%; }
+    .userlist li h2 {
+      color: #139fdc;
+      font-size: 15px; }
+    .userlist li .user-title {
+      margin-left: 1rem;
+      text-align: left;
+      align-items: center; }

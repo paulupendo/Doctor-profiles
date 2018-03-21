@@ -5,9 +5,8 @@ import { Button, Input, Dropdown } from 'semantic-ui-react';
 import './landingPage.css';
 
 class LandingPage extends Component {
-
   handleClick = () => {
-  this.props.history.push('/find-profile');
+    this.props.history.push('/find-profile');
   };
   render() {
     const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520253425/AlemHealthLogo_1.svg';
@@ -21,7 +20,7 @@ class LandingPage extends Component {
                 <li>Products</li>
                 <li>Carrers</li>
               </ul>
-            <Button> Login </Button>
+              <Button> Login </Button>
             </div>
           </div>
           <div className="site-header">
