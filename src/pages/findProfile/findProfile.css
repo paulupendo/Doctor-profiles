@@ -1,6 +1,6 @@
 .find-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #F6F9FC; }
   .find-container .find-navbar {
     display: flex;
@@ -28,4 +28,7 @@
         color: #464957;
         font-size: 1.5rem; }
       .find-container .header-container .header p {
-        margin-left: auto; }
+        margin-left: auto;
+        color: #3897ec;
+        cursor: pointer;
+        font-size: small; }

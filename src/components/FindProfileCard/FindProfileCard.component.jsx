@@ -13,7 +13,8 @@ const FindProfileCard = () => {
           <img className="user-pic" src={image} />
           <div className="user-title">
             <h2> Sammy Chitaya, M.D. </h2>
-            <span> Internist - General </span>
+            <span> Internist - General </span> <br/>
+             <span> Orlando N </span>
           </div>
         </li>
       </ul>

@@ -17,7 +17,7 @@ class FindProfile extends Component {
         <div className="header-container">
           <div className="header">
             <h1> Select your Profile </h1>
-            <p> Cant find your Profile </p>
+            <p> Cant find your Profile ?</p>
           </div>
           <div className="user-lists">
             <FindProfileCard />
