@@ -10,6 +10,7 @@ import DashBoard from './pages/dashboard/dashboard.component';
 import DoctorProfile from './pages/doctorProfile/doctorProfile.component';
 import LandingPage from './pages/landingPage/landingPage.component';
 import FindProfile from './pages/findProfile/findProfile.component';
+import SignUp from './pages/signup/Signup.component';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <div className="App-header">
             <Switch>
               <Route exact path="/" component={LandingPage} />
+              <Route exact path="/sign-up" component={SignUp} />
               <Route path="/find-a-doctor" component={DashBoard} />
               <Route path="/find-profile" component={FindProfile} />
               <Route path="/doctor-profile" component={DoctorProfile} /> /** Should have a doctor slug later on */

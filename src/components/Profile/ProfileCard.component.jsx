@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  Icon,
-  Progress,
-  Rating,
-  Button,
-  List,
-  Modal,
-  Header,
-  Dropdown,
-} from 'semantic-ui-react';
+import { Card, Icon, Progress, Rating, Button, List, Modal, Header, Dropdown } from 'semantic-ui-react';
 
 // Styles
 import './ProfileCard.css';
@@ -47,30 +37,30 @@ class ProfileCard extends Component {
       {
         text: 'Initial Consultation',
         value: 'Initial Consulation',
-        key: 'Initial Consulation',
+        key: 'Initial Consulation'
       },
       {
         text: 'Follow Up visit',
         value: 'Follow Up visit',
-        key: 'Follow Up visit',
-      },
+        key: 'Follow Up visit'
+      }
     ];
     const insuranceOptions = [
       {
         text: "I'm Paying",
         value: "I'm Paying",
-        key: "I'm Paying",
+        key: "I'm Paying"
       },
       {
         text: 'Aetna',
         value: 'Aetna',
-        key: 'Aetna',
+        key: 'Aetna'
       },
       {
         text: 'Anthem',
         value: 'Anthem',
-        key: 'Anthem',
-      },
+        key: 'Anthem'
+      }
     ];
     return (
       <div className="profile-card">
