@@ -13,7 +13,7 @@ class SignUp extends Component {
         </div>
         <div className="s-card-header">
         <div className="s-card">
-        <h1> Create Your AlemHealth Account
+        <h1> Create Your AlemHealth Account </h1>git 
         </div>
         </div>
       </div>
