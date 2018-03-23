@@ -7,6 +7,9 @@ import './findProfile.css';
 import FindProfileCard from '../../components/FindProfileCard/FindProfileCard.component';
 
 class FindProfile extends Component {
+  handleClick = () => {
+    this.props.history.push('/sign-up');
+  };
   render() {
     const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520499609/AlemHealthLogo.svg';
     return (
@@ -17,7 +20,7 @@ class FindProfile extends Component {
         <div className="header-container">
           <div className="header">
             <h1> Select your Profile </h1>
-            <p> Cant find your Profile ?</p>
+            <p onClick={this.handleClick}> Cant find your Profile ?</p>
           </div>
           <div className="user-lists">
             <FindProfileCard />

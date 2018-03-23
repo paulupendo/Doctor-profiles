@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  Icon,
-  Progress,
-  Rating,
-  Button,
-  List,
-  Modal,
-  Header,
-  Dropdown,
-} from 'semantic-ui-react';
+import { Card, Icon, Progress, Rating, Button, List, Modal, Header, Dropdown } from 'semantic-ui-react';
 
 // Styles
 import './ProfileCard.css';
@@ -26,30 +16,30 @@ class ProfileCard extends Component {
       {
         text: 'Initial Consultation',
         value: 'Initial Consulation',
-        key: 'Initial Consulation',
+        key: 'Initial Consulation'
       },
       {
         text: 'Follow Up visit',
         value: 'Follow Up visit',
-        key: 'Follow Up visit',
-      },
+        key: 'Follow Up visit'
+      }
     ];
     const insuranceOptions = [
       {
         text: "I'm Paying",
         value: "I'm Paying",
-        key: "I'm Paying",
+        key: "I'm Paying"
       },
       {
         text: 'Aetna',
         value: 'Aetna',
-        key: 'Aetna',
+        key: 'Aetna'
       },
       {
         text: 'Anthem',
         value: 'Anthem',
-        key: 'Anthem',
-      },
+        key: 'Anthem'
+      }
     ];
     return (
       <div className="profile-card">
@@ -123,12 +113,7 @@ class ProfileCard extends Component {
                   <Modal.Content>
                     <div className="inner-container">
                       <div className="content-left">
-                        <Dropdown
-                          placeholder="Select a reason for you visit"
-                          fluid
-                          selection
-                          options={visitReasons}
-                        />
+                        <Dropdown placeholder="Select a reason for you visit" fluid selection options={visitReasons} />
                         <Dropdown
                           placeholder="Select your insurance company"
                           fluid
@@ -152,7 +137,6 @@ class ProfileCard extends Component {
                       </div>
                     </div>
                   </Modal.Content>
-                 
                 </Modal>
               </div>
               <div className="view-profile-btn">
