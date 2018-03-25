@@ -73,7 +73,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 46px; }
+        margin-bottom: 40px; }
         .sign-up-container .s-card-header .signup-container .su-dropdown .ui.selection.dropdown {
           border-radius: 5px;
           border: solid 1px #dbe2e8; }
@@ -82,7 +82,7 @@
     .sign-up-container .s-card-header .s-btn {
       display: flex;
       flex-direction: row;
-      margin-left: 4rem; }
+      margin-left: 4.5rem; }
       .sign-up-container .s-card-header .s-btn .ui.button {
         width: 402.4px;
         height: 33.9px;
