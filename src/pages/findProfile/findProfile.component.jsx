@@ -10,8 +10,14 @@ class FindProfile extends Component {
   handleClick = () => {
     this.props.history.push('/sign-up');
   };
+
+  handleCardClick = () => {
+    this.props.history.push('/sign-in');
+  };
+
   render() {
-    const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520499609/AlemHealthLogo.svg';
+    const image =
+      'http://res.cloudinary.com/dlqcyupez/image/upload/v1520499609/AlemHealthLogo.svg';
     return (
       <div className="find-container">
         <div className="find-navbar">
@@ -23,7 +29,7 @@ class FindProfile extends Component {
             <p onClick={this.handleClick}> Cant find your Profile ?</p>
           </div>
           <div className="user-lists">
-            <FindProfileCard />
+            <FindProfileCard handleClick={this.handleCardClick} />
             <FindProfileCard />
             <FindProfileCard />
           </div>
