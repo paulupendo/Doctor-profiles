@@ -149,12 +149,26 @@
     justify-content: space-between; }
     .ui.active.modal .inner-container .content-left {
       width: 60%;
-      margin-left: 2rem; }
-      .ui.active.modal .inner-container .content-left div[role="listbox"] {
+      margin-left: 2rem;
+      flex-direction: column; }
+      .ui.active.modal .inner-container .content-left div[role='listbox'] {
         margin-bottom: 1rem; }
+      .ui.active.modal .inner-container .content-left .modal-action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem; }
+        .ui.active.modal .inner-container .content-left .modal-action .ui.icon.button {
+          border-radius: 6rem;
+          padding: .8rem 3rem .8rem 3rem;
+          background: transparent;
+          border: 2px solid darkslategrey;
+          color: darkslategrey; }
+        .ui.active.modal .inner-container .content-left .modal-action .ui.icon.button > .icon {
+          margin-right: .5rem !important; }
     .ui.active.modal .inner-container .content-right {
-      background: #F2F2F2;
-      border: 1px solid #F2F2F2;
+      background: #f2f2f2;
+      border: 1px solid #f2f2f2;
       border-radius: 2px;
       padding: 1rem;
       width: 26%;
@@ -168,9 +182,9 @@
         text-align: left; }
         .ui.active.modal .inner-container .content-right div div {
           margin-top: 1.5rem;
-          font-size: .9rem; }
+          font-size: 0.9rem; }
           .ui.active.modal .inner-container .content-right div div h5 {
-            font-size: .8rem;
+            font-size: 0.8rem;
             text-align: left; }
 
 .dimmed.dimmable > .ui.animating.dimmer,

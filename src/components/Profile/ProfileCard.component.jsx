@@ -4,11 +4,32 @@ import { Card, Icon, Progress, Rating, Button, List, Modal, Header, Dropdown } f
 // Styles
 import './ProfileCard.css';
 
-const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
+const image =
+  'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
 
 class ProfileCard extends Component {
+  state = {
+    visitReason: null,
+    insurance: null,
+  };
+
   handleClick = () => {
     this.props.history.push('/doctor-profile');
+  };
+
+  getReason = (e, { value }) => {
+    this.setState({ visitReason: value });
+  };
+
+  getInsurance = (e, { value }) => {
+    this.setState({ insurance: value });
+  };
+
+  handleModalClose = () => {
+    this.setState({
+      visitReason: null,
+      insurance: null,
+    });
   };
 
   render() {
@@ -69,7 +90,9 @@ class ProfileCard extends Component {
                 <List.Item>
                   <List.Icon name="location arrow" />
                   <List.Content>Main Location</List.Content>
-                  <List.Description>315 Madison Ave. Room 509 New York, New York 10017</List.Description>
+                  <List.Description>
+                    315 Madison Ave. Room 509 New York, New York 10017
+                  </List.Description>
                 </List.Item>
               </List>
             </div>
@@ -88,7 +111,8 @@ class ProfileCard extends Component {
                   <List.Icon name="doctor" />
                   <List.Content>Summary</List.Content>
                   <List.Description>
-                    Dr. Sammy Chitayat is a Board Certified practicing Internal Medicine ...READ MORE
+                    Dr. Sammy Chitayat is a Board Certified practicing Internal
+                    Medicine ...READ MORE
                   </List.Description>
                 </List.Item>
               </List>
@@ -108,18 +132,39 @@ class ProfileCard extends Component {
                     </Button>
                   }
                   closeIcon
+                  onClose={this.handleModalClose}
                 >
                   <Header icon="calendar" content="Dr. Sammy Chitaya" />
                   <Modal.Content>
                     <div className="inner-container">
                       <div className="content-left">
-                        <Dropdown placeholder="Select a reason for you visit" fluid selection options={visitReasons} />
+                        <Dropdown
+                          placeholder="Select a reason for you visit"
+                          fluid
+                          selection
+                          options={visitReasons}
+                          onChange={this.getReason}
+                        />
                         <Dropdown
                           placeholder="Select your insurance company"
                           fluid
                           selection
                           options={insuranceOptions}
+                          onChange={this.getInsurance}
                         />
+                        <div className="modal-action">
+                          <div>
+                            <Button icon>
+                              <Icon name="cancel" />Back
+                            </Button>
+                          </div>
+                          <div>
+                            <Button icon>
+                              <Icon name="check" />
+                              Continue
+                            </Button>
+                          </div>
+                        </div>
                       </div>
                       <div className="content-right">
                         <h5>Sammy Chitayat, MD</h5>
@@ -133,6 +178,16 @@ class ProfileCard extends Component {
                           <div>
                             <h5>SPECIALTY</h5> Internal Medicine
                           </div>
+                          {this.state.visitReason !== null ? (
+                            <div>
+                              <h5>REASON FOR VISIT</h5> {this.state.visitReason}
+                            </div>
+                          ) : null}
+                          {this.state.insurance !== null ? (
+                            <div>
+                              <h5>INSURANCE PLAN</h5> {this.state.insurance}
+                            </div>
+                          ) : null}
                         </div>
                       </div>
                     </div>

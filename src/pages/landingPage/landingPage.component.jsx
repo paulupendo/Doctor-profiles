@@ -8,8 +8,11 @@ class LandingPage extends Component {
   handleClick = () => {
     this.props.history.push('/find-profile');
   };
+
   render() {
-    const image = 'http://res.cloudinary.com/dlqcyupez/image/upload/v1520253425/AlemHealthLogo_1.svg';
+    const image =
+      'http://res.cloudinary.com/dlqcyupez/image/upload/v1520253425/AlemHealthLogo_1.svg';
+
     return (
       <div className="site-container">
         <div className="site-jumbotron">
