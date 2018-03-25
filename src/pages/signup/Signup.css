@@ -49,16 +49,14 @@
           margin-top: 0.5rem; }
         .sign-up-container .s-card-header .signup-container .input-container .ui.input > input {
           border-radius: 5px;
-          border: solid 1px #dbe2e8;
+          background: #f6f9fc;
+          border: none;
           width: 199px;
           height: 36px; }
-          .sign-up-container .s-card-header .signup-container .input-container .ui.input > input:focus {
-            border: solid 1px #139fdc; }
           .sign-up-container .s-card-header .signup-container .input-container .ui.input > input::placeholder {
             font-size: 14px;
-            font-weight: 100;
             letter-spacing: 1px;
-            color: #464957; }
+            color: #c8c8c8; }
       .sign-up-container .s-card-header .signup-container .s-dropdown {
         display: flex;
         flex-direction: row;
@@ -66,13 +64,13 @@
         margin-bottom: 46px; }
         .sign-up-container .s-card-header .signup-container .s-dropdown .ui.selection.dropdown {
           border-radius: 5px;
-          border: solid 1px #dbe2e8; }
+          background: #f6f9fc;
+          border: none; }
         .sign-up-container .s-card-header .signup-container .s-dropdown .ui.fluid.dropdown {
           width: 14.5rem; }
         .sign-up-container .s-card-header .signup-container .s-dropdown .ui.dropdown:not(.button) > .default.text {
-          color: #464957;
+          color: #c8c8c8;
           font-size: 12px;
-          font-weight: 100;
           letter-spacing: 1px; }
       .sign-up-container .s-card-header .signup-container .su-dropdown {
         display: flex;
@@ -81,25 +79,23 @@
         margin-bottom: 40px; }
         .sign-up-container .s-card-header .signup-container .su-dropdown .ui.selection.dropdown {
           border-radius: 5px;
-          border: solid 1px #dbe2e8; }
+          background: #f6f9fc;
+          border: none; }
         .sign-up-container .s-card-header .signup-container .su-dropdown .ui.fluid.dropdown {
           width: 8rem; }
         .sign-up-container .s-card-header .signup-container .su-dropdown .ui.dropdown:not(.button) > .default.text {
-          color: #464957;
+          color: #c8c8c8;
           font-size: 12px;
-          font-weight: 100;
           letter-spacing: 1px; }
     .sign-up-container .s-card-header .s-btn {
       display: flex;
       flex-direction: row;
-      margin-left: 4.5rem; }
+      margin-left: 4rem; }
       .sign-up-container .s-card-header .s-btn .ui.button {
-        width: 402.4px;
-        height: 33.9px;
-        border-radius: 22px;
-        background-color: #139fdc;
-        box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.16);
-        margin-top: 1rem;
-        margin-right: -0.1rem;
-        color: #ffffff;
-        font-weight: 400; }
+        width: 90%;
+        color: white;
+        background: #3897ec;
+        border-radius: 17px;
+        box-shadow: 0px 5px 11px 0px lightgrey; }
+        .sign-up-container .s-card-header .s-btn .ui.button:hover {
+          background: #0288c7; }
