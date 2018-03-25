@@ -69,6 +69,11 @@
           border: solid 1px #dbe2e8; }
         .sign-up-container .s-card-header .signup-container .s-dropdown .ui.fluid.dropdown {
           width: 14.5rem; }
+        .sign-up-container .s-card-header .signup-container .s-dropdown .ui.dropdown:not(.button) > .default.text {
+          color: #464957;
+          font-size: 12px;
+          font-weight: 100;
+          letter-spacing: 1px; }
       .sign-up-container .s-card-header .signup-container .su-dropdown {
         display: flex;
         flex-direction: row;
@@ -79,6 +84,11 @@
           border: solid 1px #dbe2e8; }
         .sign-up-container .s-card-header .signup-container .su-dropdown .ui.fluid.dropdown {
           width: 8rem; }
+        .sign-up-container .s-card-header .signup-container .su-dropdown .ui.dropdown:not(.button) > .default.text {
+          color: #464957;
+          font-size: 12px;
+          font-weight: 100;
+          letter-spacing: 1px; }
     .sign-up-container .s-card-header .s-btn {
       display: flex;
       flex-direction: row;
