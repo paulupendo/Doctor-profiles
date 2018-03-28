@@ -11,7 +11,7 @@ import {
 // styles
 import './Search.css';
 
-import SearchFilter from '../SearchFilter/SearchFilter.component';
+import SearchFilter from '../searchFilter/SearchFilter.component';
 
 const options = [
   { key: 'AL', value: 'AL', text: 'Alabama' },
