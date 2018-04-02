@@ -1,0 +1,131 @@
+.sign-up-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f9fc;
+
+  .s-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 74px;
+    align-items: center;
+    background-color: #ffff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+
+    img {
+      height: 2rem;
+      margin: 0 auto;
+    }
+  }
+  .s-card-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+
+    .s-card {
+      transition: 0.3s;
+      width: 524px;
+      height: 634px;
+      background-color: #ffffff;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      border-radius: 5px;
+      border: 1px solid #e3edf0;
+      background-color: #ffff;
+      margin: auto;
+      padding-top: 39px;
+    }
+    h1 {
+      font-size: 21px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      color: #464957;
+      text-align: center;
+    }
+    .signup-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 34px;
+
+      .input-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 46px;
+
+        .ui.input {
+          margin-top: 0.5rem;
+        }
+        .ui.input > input {
+          border-radius: 5px;
+          background: #f6f9fc;
+          border: none;
+          width: 199px;
+          height: 36px;
+          &::placeholder {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #c8c8c8;
+          }
+        }
+      }
+      .s-dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 46px;
+
+        .ui.selection.dropdown {
+          border-radius: 5px;
+          background: #f6f9fc;
+          border: none;
+        }
+        .ui.fluid.dropdown {
+          width: 14.5rem;
+        }
+        .ui.dropdown:not(.button) > .default.text {
+          color: #c8c8c8;
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+      .su-dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 40px;
+
+        .ui.selection.dropdown {
+          border-radius: 5px;
+          background: #f6f9fc;
+          border: none;
+        }
+        .ui.fluid.dropdown {
+          width: 8rem;
+        }
+        .ui.dropdown:not(.button) > .default.text {
+          color: #c8c8c8;
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .s-btn {
+      display: flex;
+      flex-direction: row;
+      margin-left: 4rem;
+
+      .ui.button {
+        width: 90%;
+        color: white;
+        background: #3897ec;
+        border-radius: 17px;
+        box-shadow: 0px 5px 11px 0px lightgrey;
+        &:hover {
+          background: #0288c7;
+        }
+      }
+    }
+  }
+}

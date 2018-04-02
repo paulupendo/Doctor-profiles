@@ -1,0 +1,34 @@
+.find-container {
+  width: 100%;
+  height: 100%;
+  background-color: #F6F9FC; }
+  .find-container .find-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 74px;
+    align-items: center;
+    background-color: #ffff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16); }
+    .find-container .find-navbar img {
+      height: 2rem;
+      margin: 0 auto; }
+  .find-container .header-container {
+    width: 50vw;
+    height: 100%;
+    margin: auto; }
+    .find-container .header-container .header {
+      display: flex;
+      flex-direction: row;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #EEEEEE; }
+      .find-container .header-container .header h1 {
+        font-weight: 500;
+        color: #464957;
+        font-size: 1.5rem; }
+      .find-container .header-container .header p {
+        margin-left: auto;
+        color: #3897ec;
+        cursor: pointer;
+        font-size: small; }

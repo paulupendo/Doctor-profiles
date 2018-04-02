@@ -1,0 +1,193 @@
+.profile-card {
+  display: flex;
+  padding-left: 1rem;
+  flex-direction: column;
+  padding-bottom: 2rem; }
+  .profile-card .card {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 60rem;
+    height: 19rem;
+    border-radius: 5px;
+    border: 1px solid #e3edf0; }
+    .profile-card .card .card-header {
+      display: flex;
+      flex-direction: row;
+      padding-top: 1rem;
+      padding-left: 1rem;
+      border-bottom: 1px solid #f0f0f0; }
+      .profile-card .card .card-header .card-header,
+      .profile-card .card .card-header h1 {
+        box-shadow: none;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1em; }
+      .profile-card .card .card-header .header-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 1rem; }
+        .profile-card .card .card-header .header-details .sponsored {
+          color: #3798ec;
+          margin-bottom: 1rem; }
+    .profile-card .card .result-body {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #f0f0f0;
+      padding-left: 1rem;
+      width: 100%;
+      padding-top: 1rem; }
+      .profile-card .card .result-body .profile-pic {
+        height: 6.5rem;
+        width: 6.5rem; }
+    .profile-card .card .result-section {
+      width: 11.5rem; }
+      .profile-card .card .result-section .progress-bar {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem; }
+        .profile-card .card .result-section .progress-bar .progress-name {
+          font-size: 1rem;
+          font-weight: 400;
+          color: #45afe4; }
+        .profile-card .card .result-section .progress-bar .progress-count {
+          font-size: 1rem;
+          font-weight: 400;
+          color: #45afe4;
+          margin-left: auto; }
+        .profile-card .card .result-section .progress-bar .progress-graph {
+          margin-top: 1rem; }
+      .profile-card .card .result-section .result-rating {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem; }
+        .profile-card .card .result-section .result-rating .result-rating-values {
+          font-size: 1rem;
+          font-weight: 400;
+          color: #45afe4;
+          margin-left: auto;
+          padding-bottom: 1rem; }
+          .profile-card .card .result-section .result-rating .result-rating-values .stars {
+            display: flex;
+            flex-direction: column; }
+    .profile-card .card .result-location {
+      display: flex;
+      padding-left: 2rem; }
+      .profile-card .card .result-location .ui.list > .item > .description {
+        padding-top: 0.5rem;
+        font-size: 13px;
+        width: 10rem;
+        line-height: 1.6;
+        font-weight: 400; }
+    .profile-card .card .result-highlights {
+      display: flex;
+      padding-left: 2rem; }
+      .profile-card .card .result-highlights .ui.list > .item > .description {
+        padding-top: 0.5rem;
+        font-size: 13px;
+        width: 10rem;
+        line-height: 1.6;
+        font-weight: 400; }
+    .profile-card .card .result-summary {
+      display: flex;
+      padding-left: 2rem; }
+      .profile-card .card .result-summary .ui.list > .item > .description {
+        font-size: 13px;
+        padding-top: 0.5rem;
+        width: 14rem;
+        line-height: 1.6;
+        font-weight: 400; }
+    .profile-card .card .card-footer {
+      display: flex;
+      flex-direction: row; }
+      .profile-card .card .card-footer .result-phone {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        font-size: 18px;
+        font-weight: 600;
+        color: #45afe4;
+        margin-top: 1rem; }
+      .profile-card .card .card-footer .profile-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 1rem; }
+        .profile-card .card .card-footer .profile-actions .request-btn .ui.button {
+          color: #fff;
+          background-color: #3798ec;
+          padding: 12px 15px 12px 15px;
+          letter-spacing: 0.5px;
+          font-size: 1rem;
+          text-transform: uppercase;
+          line-height: 1;
+          margin-right: rem;
+          margin-top: 1rem; }
+        .profile-card .card .card-footer .profile-actions .view-profile-btn {
+          padding-left: 1rem; }
+          .profile-card .card .card-footer .profile-actions .view-profile-btn .ui.button {
+            color: #3798ec;
+            background-color: #edf4f8;
+            padding: 12px 15px 12px 15px;
+            letter-spacing: 0.5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-right: rem;
+            margin-top: 1rem; }
+
+.ui.active.modal {
+  margin-top: 0rem !important;
+  height: 50rem; }
+  .ui.active.modal .inner-container {
+    display: flex;
+    justify-content: space-between; }
+    .ui.active.modal .inner-container .content-left {
+      width: 60%;
+      margin-left: 2rem;
+      flex-direction: column; }
+      .ui.active.modal .inner-container .content-left div[role='listbox'] {
+        margin-bottom: 1rem; }
+      .ui.active.modal .inner-container .content-left .modal-action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem; }
+        .ui.active.modal .inner-container .content-left .modal-action .ui.icon.button {
+          border-radius: 6rem;
+          padding: .8rem 3rem .8rem 3rem;
+          background: transparent;
+          border: 2px solid darkslategrey;
+          color: darkslategrey; }
+        .ui.active.modal .inner-container .content-left .modal-action .ui.icon.button > .icon {
+          margin-right: .5rem !important; }
+    .ui.active.modal .inner-container .content-right {
+      background: #f2f2f2;
+      border: 1px solid #f2f2f2;
+      border-radius: 2px;
+      padding: 1rem;
+      width: 26%;
+      margin-right: 2rem;
+      box-shadow: 1px 1px 4px gainsboro; }
+      .ui.active.modal .inner-container .content-right h5,
+      .ui.active.modal .inner-container .content-right p {
+        text-align: center; }
+      .ui.active.modal .inner-container .content-right div {
+        margin-top: 3rem;
+        text-align: left; }
+        .ui.active.modal .inner-container .content-right div div {
+          margin-top: 1.5rem;
+          font-size: 0.9rem; }
+          .ui.active.modal .inner-container .content-right div div h5 {
+            font-size: 0.8rem;
+            text-align: left; }
+
+.dimmed.dimmable > .ui.animating.dimmer,
+.dimmed.dimmable > .ui.visible.dimmer,
+.ui.active.dimmer {
+  display: flex !important; }

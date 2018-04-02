@@ -1,0 +1,26 @@
+import React from 'react';
+
+// styles
+import './FindProfileCard.css';
+
+const image =
+  'http://res.cloudinary.com/dlqcyupez/image/upload/v1520363908/img.jpg';
+
+const FindProfileCard = props => {
+  const { handleClick } = props;
+  return (
+    <div className="userlist" onClick={handleClick}>
+      <ul>
+        <li>
+          <img className="user-pic" src={image} />
+          <div className="user-title">
+            <h2> Sammy Chitaya, M.D. </h2>
+            <span> Internist - General </span> <br />
+            <span> Orlando N </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  );
+};
+export default FindProfileCard;

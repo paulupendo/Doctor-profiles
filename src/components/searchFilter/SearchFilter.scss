@@ -1,0 +1,68 @@
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .filter-text {
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+  }
+
+  .search-radius {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+
+      .radius-title {
+          padding-bottom: 0.5rem;
+          font-size: 14px;
+          color: #8e8f8f;
+          font-family: "Open Sans", sans-serif;
+      }
+  }
+  .filter-gender {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .ui.selection.dropdown{
+      min-width: 7rem;
+    }
+    .gender-text {
+      font-size: 12px;
+      font-weight: 100;
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  .filter-language {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .language-text {
+      font-size: 12px;
+      font-weight: 100;
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  .filter-points {
+    padding-left: 2rem;
+    display: flex;
+
+    .points-text{
+      padding-bottom: 0.5rem;
+      font-size: 14px;
+      color: #8e8f8f;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  .filter-checkbox {
+    padding-left: 2rem;
+    display: flex;
+    font-size: 2px;
+  }
+
+}
