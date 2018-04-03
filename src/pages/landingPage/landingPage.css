@@ -39,6 +39,10 @@
         .container .inner-container .containers__right .btn-display span {
           margin-bottom: 1rem;
           font-size: 0.9rem; }
+        .container .inner-container .containers__right .btn-display p {
+          color: red;
+          font-size: .8rem;
+          margin-top: .4rem; }
       .container .inner-container .containers__right .ui.input > input {
         width: 337.8px;
         height: 37.3px;

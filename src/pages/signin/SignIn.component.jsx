@@ -19,10 +19,10 @@ class SignIn extends Component {
     password: null,
   };
 
-  componentWillReceiveProps(nextProps) {
-    nextProps.errorMessage.length > 0 &&
-      swal('Error', `${nextProps.errorMessage}`, 'error');
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   nextProps.errorMessage.length > 0 &&
+  //     swal('Error', `${nextProps.errorMessage}`, 'error');
+  // }
 
   handleChange = (e, key) => {
     this.setState({ [key]: e.target.value });

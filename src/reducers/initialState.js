@@ -3,5 +3,6 @@ export default {
     fetchPhone: [],
     signInStatus: null,
     errorMessage: null,
+    doctorDetails: {},
   },
 };

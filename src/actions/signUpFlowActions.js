@@ -5,6 +5,8 @@ import {
   LOGIN_REQUEST,
   LOGIN_SUCCESS,
   LOGIN_FAILURE,
+  ADD_DETAILS_REQUEST,
+  ADD_DETAILS_SUCCESS,
 } from './types';
 
 export const fetchPhone = data => ({
@@ -34,5 +36,15 @@ export const loginSuccess = data => ({
 
 export const loginFailure = data => ({
   type: LOGIN_FAILURE,
+  data,
+});
+
+export const addDetails = data => ({
+  type: ADD_DETAILS_REQUEST,
+  data,
+});
+
+export const addDetailsSuccess = data => ({
+  type: ADD_DETAILS_SUCCESS,
   data,
 });
