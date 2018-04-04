@@ -6,8 +6,19 @@ import {
   CognitoUser,
   AuthenticationDetails,
 } from 'amazon-cognito-identity-js';
+import Amplify, { Auth } from 'aws-amplify';
 
 import * as apiConstants from './constants';
+
+Amplify.configure({
+  Auth: {
+    identityPoolId: 'ap-southeast-1:1587731b-52eb-4da9-afc9-6da483f8b66d',
+    region: 'ap-southeast-1',
+    userPoolId: 'ap-southeast-1_GFjckZq8v',
+    userPoolWebClientId: '4ab86dvce3uqdifvng4cnf9lti',
+    mandatorySignIn: false,
+  },
+});
 
 export const fetchPhoneNumber = phoneNumber => {
   let url_ = `${apiConstants.API_BASE_URL}?phone=${phoneNumber}`;
@@ -16,74 +27,6 @@ export const fetchPhoneNumber = phoneNumber => {
   });
 };
 
-const cognitoPromise = userData => {
-  return new Promise((resolve, reject) => {
-    let poolData = {
-      ClientId: '5ru1d7vc227d1k3gofgp0le9mo',
-      UserPoolId: 'ap-southeast-1_awUUyI24l',
-    };
-
-    let userPool = new CognitoUserPool(poolData);
-    let authenticationDetails = new AuthenticationDetails(userData);
-
-    let cognitoUserData = {
-      Username: userData.Username,
-      Pool: userPool,
-    };
-
-    let cognitoUser = new CognitoUser(cognitoUserData);
-
-    // let userAttribute = {
-    //   name: 'paul',
-    //   middle_name: 'Upendo',
-    //   family_name: 'okango',
-    //   email: 'paul@gmail.com',
-    //   phone_number: '+254739200144',
-    // };
-
-    cognitoUser.authenticateUser(authenticationDetails, {
-      onSuccess: result => {
-        console.log('access_token', result.getAccessToken().getJwtToken());
-
-        AWS.config.region = 'ap-southeast-1';
-        // AWS.config.credentials.clearCacheId()
-
-        AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-          IdentityPoolId: 'ap-southeast-1:22fb3ec5-b020-487c-83b7-be1553f27737',
-          Logins: {
-            'cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_awUUyI24l': result
-              .getAccessToken()
-              .getJwtToken(),
-          },
-        });
-
-        AWS.config.credentials.refresh(error => {
-          if (error) {
-            console.error(error);
-          } else {
-            resolve('Successfully logged!');
-          }
-        });
-      },
-      // newPasswordRequired: function(userAttributes, requiredAttributes) {
-      //   userAttributes = userAttribute;
-      //   cognitoUser.completeNewPasswordChallenge(
-      //     'TestUs3r123$',
-      //     userAttributes,
-      //     this,
-      //   );
-
-      //   resolve('success');
-      // },
-
-      onFailure: err => {
-        console.log(err);
-        reject(err.message);
-      },
-    });
-  });
-};
-
-export const congnitoAuth = async userData => {
-  await cognitoPromise(userData);
+export const amplifyAuth = userData => {
+  return Auth.signIn(userData.username, userData.password).then(user => user);
 };

@@ -40,8 +40,8 @@ class SignIn extends Component {
 
   handleLogin = () => {
     let userData = {
-      Username: this.state.email,
-      Password: this.state.password,
+      username: this.state.email,
+      password: this.state.password,
     };
 
     let result = this.validation(userData);

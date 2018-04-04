@@ -5,7 +5,7 @@ import {
   LOGIN_REQUEST,
   ADD_DETAILS_REQUEST,
 } from '../actions/types';
-import { fetchPhoneNumber, congnitoAuth } from '../apiCalls';
+import { fetchPhoneNumber, amplifyAuth } from '../apiCalls';
 
 import {
   getPhoneNumberSuccess,
@@ -26,10 +26,10 @@ function* phoneFetchHandler(action) {
 
 function* loginRequestHandler(action) {
   try {
-    const data = yield call(congnitoAuth, action.data);
+    const data = yield call(amplifyAuth, action.data);
     yield put(loginSuccess(data));
-  } catch (e) {
-    yield put(loginFailure(e));
+  } catch (error) {
+    yield put(loginFailure(error));
   }
 }
 
