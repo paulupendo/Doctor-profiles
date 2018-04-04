@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "amazon-cognito-identity-js": "^2.0.3",
+    "aws-amplify": "^0.2.14",
+    "aws-amplify-react": "^0.1.38",
     "aws-sdk": "^2.218.1",
     "axios": "^0.18.0",
     "eslint": "^4.18.2",
