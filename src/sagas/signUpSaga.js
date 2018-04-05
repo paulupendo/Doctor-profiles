@@ -29,7 +29,7 @@ function* loginRequestHandler(action) {
     const data = yield call(amplifyAuth, action.data);
     yield put(loginSuccess(data));
   } catch (error) {
-    yield put(loginFailure(error));
+    yield put(loginFailure(error.message));
   }
 }
 

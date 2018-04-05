@@ -17,28 +17,31 @@ class SignIn extends Component {
   state = {
     email: null,
     password: null,
+    emailError: null,
+    errorMessage: this.props.errorMessage,
   };
 
-  // componentWillReceiveProps(nextProps) {
-  //   nextProps.errorMessage.length > 0 &&
-  //     swal('Error', `${nextProps.errorMessage}`, 'error');
-  // }
+  componentWillReceiveProps(nextProps) {
+    nextProps.errorMessage !== null &&
+      swal('Error', `${nextProps.errorMessage}`, 'error');
+  }
 
   handleChange = (e, key) => {
     this.setState({ [key]: e.target.value });
+    key === 'email' && this.setState({ emailError: null });
   };
 
   validation = data => {
-    // let emailRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let emailRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    // if (emailRe.test(data.Email)) {
-    //   return true;
-    // }
-    // return 'Please use a valid email !';
-    return true;
+    if (emailRe.test(data.username)) {
+      return true;
+    } else if (!emailRe.test(data.username)) {
+      return 'Please use a valid email !';
+    }
   };
 
-  handleLogin = () => {
+  handleLogin = async () => {
     let userData = {
       username: this.state.email,
       password: this.state.password,
@@ -48,8 +51,12 @@ class SignIn extends Component {
 
     if (result === true) {
       this.props.loginRequest(userData);
+      this.props.signInStats
+        ? this.setState({ errorMessage: null })
+        : this.state.errorMessage !== null &&
+          swal('Error', `${this.state.errorMessage}`, 'error');
     } else {
-      swal('Warning', `${result}`, 'warning');
+      this.setState({ emailError: result });
     }
   };
 
@@ -64,6 +71,7 @@ class SignIn extends Component {
               placeholder="Email"
               onChange={e => this.handleChange(e, 'email')}
             />
+            <p>{this.state.emailError !== null && this.state.emailError}</p>
           </div>
           <div>
             <Input
@@ -87,7 +95,6 @@ class SignIn extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state, 'EHER');
   return {
     signInStats: state.signUpStats.signInStatus,
     errorMessage: state.signUpStats.errorMessage,
