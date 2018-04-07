@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import storeConfig from './store/store';
 
+// styles
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import './iziToast.min.css';
 import 'semantic-ui-css/semantic.min.css';
+
+// components
+import App from './App';
+
+import registerServiceWorker from './registerServiceWorker';
 
 const store = storeConfig();
 

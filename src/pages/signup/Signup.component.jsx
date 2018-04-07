@@ -1,55 +1,88 @@
-import React, { Component } from "react";
-import { Input, Dropdown, Button } from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Step, Segment, Button, Divider } from 'semantic-ui-react';
+import { connect } from 'react-redux';
+
+// components
+import { Header } from '../../common/header/Header.component';
 
 // styles
-import "./Signup.css";
+import './Signup.css';
 
 class SignUp extends Component {
-  handleClick = () => {
-    this.props.history.push("/sign-in");
-  };
+  componentWillMount() {
+    Object.keys(this.props.doctorDetails).length === 0 &&
+      this.props.history.push('/');
+  }
+
   render() {
-    const image =
-      "http://res.cloudinary.com/dlqcyupez/image/upload/v1520499609/AlemHealthLogo.svg";
     return (
       <div className="sign-up-container">
-        <div className="s-navbar">
-          <img className="logo" src={image} />
+        <Header />
+        <div className="inner-container">
+          <Step.Group>
+            <Step active>
+              <Step.Content>
+                <Step.Description>Required Details</Step.Description>
+              </Step.Content>
+            </Step>
+            <Step>
+              <Step.Content>
+                <Step.Description>Additional Details</Step.Description>
+              </Step.Content>
+            </Step>
+          </Step.Group>
+          <Segment attached>
+            <div className="header-info">
+              <div className="title">BASIC INFORMATION</div>
+              <div>
+                <Button content="EDIT" />
+              </div>
+            </div>
+            <div className="personal-info">
+              <div>
+                <span>FULL NAME</span>
+                <h5>{this.props.doctorDetails.fullNames}</h5>
+              </div>
+              <div>
+                <span>PHONE NUMBER</span>
+                <h5>{this.props.doctorDetails.phoneNumber}</h5>
+              </div>
+            </div>
+            <div className="doc-specialty">
+              <div>
+                <span>SPECIALTY</span>
+                <h5>
+                  {Object.keys(this.props.doctorDetails).length !== 0 && [
+                    ...this.props.doctorDetails.specialties,
+                  ]}
+                </h5>
+              </div>
+            </div>
+            <Divider />
+            <div className="medical-license-box">
+              <div>* MEDICAL LICENSE</div>
+              <div>
+                <h5>
+                  For verification please provide us with a copy of your medical
+                  license
+                </h5>
+              </div>
+              <div>
+                <Button content="UPLOAD" />
+              </div>
+            </div>
+          </Segment>
         </div>
-        <div className="s-card-header">
-          <div className="s-card">
-            <h1> Create Your AlemHealth Account </h1>
-            <div className="signup-container">
-              <div className="input-container">
-                <Input placeholder="First Name" />
-                <Input placeholder="Last Name" />
-              </div>
-              <div className="input-container">
-                <Input placeholder="Email" />
-                <Input placeholder="Phone Number" />
-              </div>
-              <div className="input-container">
-                <Input placeholder="Password" type="password" />
-                <Input placeholder="Confirm Password" type="password" />
-              </div>
-              <div className="s-dropdown">
-                <Dropdown placeholder="Speciality" fluid selection />
-                <Dropdown placeholder="Office Hours" fluid selection />
-              </div>
-              <div className="su-dropdown">
-                <Dropdown placeholder="Gender" fluid selection />
-                <Dropdown placeholder="Language" fluid selection />
-                <Dropdown placeholder="Country" fluid selection />
-              </div>
-            </div>
-            <div className="s-btn">
-              <Button onClick={this.handleClick}>Sign Up</Button>
-            </div>
-          </div>
+        <div className="btn">
+          <Button content="NEXT" />
         </div>
       </div>
     );
   }
 }
 
-export default SignUp;
+const mapStateToProps = state => ({
+  doctorDetails: state.signUpStats.doctorDetails,
+});
+
+export default connect(mapStateToProps)(SignUp);

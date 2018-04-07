@@ -21,10 +21,6 @@ class SignIn extends Component {
     errorMessage: this.props.errorMessage,
   };
 
-  componentWillReceiveProps(nextProps) {
-    nextProps.errorMessage !== null &&
-      swal('Error', `${nextProps.errorMessage}`, 'error');
-  }
 
   handleChange = (e, key) => {
     this.setState({ [key]: e.target.value });

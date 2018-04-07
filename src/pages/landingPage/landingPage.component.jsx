@@ -9,7 +9,9 @@ import {
 } from 'semantic-ui-react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import swal from 'sweetalert';
+
+// 3rd Party libraries
+import iziToast from 'izitoast';
 
 // styles
 import './landingPage.css';
@@ -33,8 +35,31 @@ class LandingPage extends Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    nextProps.fetchPhone_.length !== 0 &&
-      this.props.history.push('/match-found');
+    nextProps.fetchPhone_.length !== 0
+      ? this.props.history.push('/match-found')
+      : this.props.fetchPhone_.length === 0
+        ? iziToast.question({
+            timeout: 10000,
+            overlay: true,
+            id: 'question',
+            position: 'center',
+            zindex: 999,
+            message: 'Profile not found! Join Us?',
+            close: true,
+            color: '#3897ec',
+            messageColor: '#fff',
+            buttons: [
+              [
+                '<button><b>Go to Sign Up</b></button>',
+                (instance, toast) => {
+                  instance.hide(toast, { transitionOut: 'fadeOutUp' });
+                  this.props.history.push('/sign-up');
+                },
+                true,
+              ],
+            ],
+          })
+        : null;
   }
 
   validation = data => {
@@ -48,6 +73,12 @@ class LandingPage extends Component {
       specialties.length === 0 ||
       fullNames === null
     ) {
+      iziToast.warning({
+        title: 'Input Error:',
+        message: 'All fields are required!',
+        position: 'topRight',
+      });
+
       this.setState({ error: 'All fields are required!' });
     } else if (!regX.test(phoneNumber) || !regX.test(fullNames)) {
       if (!regX.test(phoneNumber)) {
@@ -70,16 +101,18 @@ class LandingPage extends Component {
     };
 
     let result = this.validation(data);
-    console.log(result, 'HERE');
+
     if (result === true) {
       this.setState({ error: null });
-      this.props.fetchPhone(data.phoneNumber);
+      let encodedPhoneNo = encodeURIComponent(data.phoneNumber);
+      this.props.fetchPhone(encodedPhoneNo);
       this.props.addDetails(data);
     }
   };
 
   handleChange = (e, key) => {
     this.setState({ [key]: e.target.value });
+
     key === 'phoneNumber' && this.setState({ phoneError: null });
     key === 'fullNames' && this.setState({ fullNameError: null });
   };
@@ -149,7 +182,6 @@ class LandingPage extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state, 'STATE');
   return {
     errorMessage: state.signUpStats.errorMessage,
     fetchPhone_: state.signUpStats.fetchPhone,

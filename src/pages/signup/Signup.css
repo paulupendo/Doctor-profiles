@@ -1,101 +1,111 @@
 .sign-up-container {
-  width: 100%;
-  height: 100%;
-  background-color: #f6f9fc; }
-  .sign-up-container .s-navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 74px;
-    align-items: center;
-    background-color: #ffff;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16); }
-    .sign-up-container .s-navbar img {
-      height: 2rem;
-      margin: 0 auto; }
-  .sign-up-container .s-card-header {
-    display: flex;
-    flex-direction: row;
-    margin-top: 4rem; }
-    .sign-up-container .s-card-header .s-card {
-      transition: 0.3s;
-      width: 524px;
-      height: 634px;
-      background-color: #ffffff;
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-      border-radius: 5px;
-      border: 1px solid #e3edf0;
-      background-color: #ffff;
-      margin: auto;
-      padding-top: 39px; }
-    .sign-up-container .s-card-header h1 {
-      font-size: 21px;
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      color: #464957;
-      text-align: center; }
-    .sign-up-container .s-card-header .signup-container {
+  width: 100%; }
+  .sign-up-container .inner-container {
+    width: 795.7px;
+    height: 422.2px;
+    background-color: #ffffff;
+    border: solid 1px #f5f5f5;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 6rem; }
+    .sign-up-container .inner-container .ui.steps {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #f5f5f594;
+      border-radius: 0; }
+      .sign-up-container .inner-container .ui.steps .step {
+        border: none; }
+        .sign-up-container .inner-container .ui.steps .step::after {
+          content: none; }
+      .sign-up-container .inner-container .ui.steps .step.active {
+        background-color: #3897ec;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+        .sign-up-container .inner-container .ui.steps .step.active .description {
+          color: #fff; }
+    .sign-up-container .inner-container .ui.attached.segment {
+      border: none;
       display: flex;
       flex-direction: column;
-      margin-top: 34px; }
-      .sign-up-container .s-card-header .signup-container .input-container {
+      padding-left: 1.5rem;
+      padding-top: 0; }
+      .sign-up-container .inner-container .ui.attached.segment .header-info {
+        width: 65%;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #3897ec;
+        position: relative; }
+        .sign-up-container .inner-container .ui.attached.segment .header-info .title {
+          bottom: 0;
+          position: absolute; }
+        .sign-up-container .inner-container .ui.attached.segment .header-info .ui.button {
+          font-size: 13px;
+          float: right;
+          background-color: #f1f3f4;
+          padding: 0.8rem;
+          width: 94.2px; }
+      .sign-up-container .inner-container .ui.attached.segment .personal-info {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 46px; }
-        .sign-up-container .s-card-header .signup-container .input-container .ui.input {
-          margin-top: 0.5rem; }
-        .sign-up-container .s-card-header .signup-container .input-container .ui.input > input {
-          border-radius: 5px;
-          background: #f6f9fc;
-          border: none;
-          width: 199px;
-          height: 36px; }
-          .sign-up-container .s-card-header .signup-container .input-container .ui.input > input::placeholder {
-            font-size: 14px;
-            letter-spacing: 1px;
-            color: #c8c8c8; }
-      .sign-up-container .s-card-header .signup-container .s-dropdown {
+        width: 50%;
+        justify-content: space-between;
+        margin-top: 1.3rem; }
+        .sign-up-container .inner-container .ui.attached.segment .personal-info span {
+          color: #6f6e6e;
+          font-size: 0.8rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem; }
+        .sign-up-container .inner-container .ui.attached.segment .personal-info h5 {
+          color: #444444;
+          font-weight: bold;
+          font-size: 0.9rem;
+          margin-top: 0.4rem; }
+      .sign-up-container .inner-container .ui.attached.segment .doc-specialty {
+        margin-top: 1.5rem;
+        width: 50%; }
+        .sign-up-container .inner-container .ui.attached.segment .doc-specialty span {
+          color: #6f6e6e;
+          font-size: 0.8rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem; }
+        .sign-up-container .inner-container .ui.attached.segment .doc-specialty h5 {
+          color: #444444;
+          font-weight: bold;
+          font-size: 0.9rem;
+          margin-top: 0.4rem; }
+      .sign-up-container .inner-container .ui.attached.segment .ui.divider {
+        width: 65%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; }
+      .sign-up-container .inner-container .ui.attached.segment .medical-license-box {
+        width: 65%;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #3897ec;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 46px; }
-        .sign-up-container .s-card-header .signup-container .s-dropdown .ui.selection.dropdown {
-          border-radius: 5px;
-          background: #f6f9fc;
-          border: none; }
-        .sign-up-container .s-card-header .signup-container .s-dropdown .ui.fluid.dropdown {
-          width: 14.5rem; }
-        .sign-up-container .s-card-header .signup-container .s-dropdown .ui.dropdown:not(.button) > .default.text {
-          color: #c8c8c8;
+        flex-direction: column; }
+        .sign-up-container .inner-container .ui.attached.segment .medical-license-box h5 {
+          color: #444444;
+          font-weight: bold;
+          font-size: 0.9rem;
+          margin-top: 0.4rem; }
+        .sign-up-container .inner-container .ui.attached.segment .medical-license-box .ui.button {
+          width: 125.3px;
+          height: 36.7px;
+          border-radius: 4px;
+          background-color: #3897ec;
+          border: solid 1px #f1f3f4;
+          color: #fff;
           font-size: 12px;
-          letter-spacing: 1px; }
-      .sign-up-container .s-card-header .signup-container .su-dropdown {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 40px; }
-        .sign-up-container .s-card-header .signup-container .su-dropdown .ui.selection.dropdown {
-          border-radius: 5px;
-          background: #f6f9fc;
-          border: none; }
-        .sign-up-container .s-card-header .signup-container .su-dropdown .ui.fluid.dropdown {
-          width: 8rem; }
-        .sign-up-container .s-card-header .signup-container .su-dropdown .ui.dropdown:not(.button) > .default.text {
-          color: #c8c8c8;
-          font-size: 12px;
-          letter-spacing: 1px; }
-    .sign-up-container .s-card-header .s-btn {
-      display: flex;
-      flex-direction: row;
-      margin-left: 4rem; }
-      .sign-up-container .s-card-header .s-btn .ui.button {
-        width: 90%;
-        color: white;
-        background: #3897ec;
-        border-radius: 17px;
-        box-shadow: 0px 5px 11px 0px lightgrey; }
-        .sign-up-container .s-card-header .s-btn .ui.button:hover {
-          background: #0288c7; }
+          margin-top: 1.5rem; }
+  .sign-up-container .btn {
+    width: 795.7px;
+    margin: 0 auto;
+    margin-top: 1.5rem; }
+    .sign-up-container .btn .ui.button {
+      float: right;
+      width: 125.3px;
+      height: 36.7px;
+      border-radius: 4px;
+      background-color: #3897ec;
+      border: solid 1px #f1f3f4;
+      color: #fff; }
