@@ -97,6 +97,87 @@
           color: #fff;
           font-size: 12px;
           margin-top: 1.5rem; }
+    .sign-up-container .inner-container .additional-details {
+      display: flex;
+      flex-direction: column; }
+      .sign-up-container .inner-container .additional-details .additional-header {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem; }
+        .sign-up-container .inner-container .additional-details .additional-header img {
+          height: 8rem;
+          cursor: pointer; }
+        .sign-up-container .inner-container .additional-details .additional-header .user-title {
+          margin-left: 1rem;
+          text-align: left;
+          align-items: center;
+          padding-top: 0.6rem; }
+          .sign-up-container .inner-container .additional-details .additional-header .user-title h2 {
+            color: #444444;
+            font-family: Lato;
+            font-size: 17px;
+            text-transform: capitalize;
+            font-weight: 400; }
+          .sign-up-container .inner-container .additional-details .additional-header .user-title span {
+            color: rgba(68, 68, 68, 0.8);
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: bold; }
+          .sign-up-container .inner-container .additional-details .additional-header .user-title h5 {
+            color: rgba(68, 68, 68, 0.8);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 1.4rem; }
+        .sign-up-container .inner-container .additional-details .additional-header .additinal-info {
+          display: flex;
+          flex-direction: column;
+          margin-left: auto; }
+          .sign-up-container .inner-container .additional-details .additional-header .additinal-info .ui.input {
+            margin-top: 1rem;
+            width: 340.9px;
+            height: 41px;
+            border-radius: 4px;
+            margin-right: 0.5rem; }
+            .sign-up-container .inner-container .additional-details .additional-header .additinal-info .ui.input > input {
+              background-color: #f1f3f4;
+              border: none; }
+              .sign-up-container .inner-container .additional-details .additional-header .additinal-info .ui.input > input::placeholder {
+                color: #3897ec; }
+      .sign-up-container .inner-container .additional-details .ui.divider {
+        width: 100% !important;
+        margin-top: 3rem !important;
+        margin-bottom: 1.5rem; }
+      .sign-up-container .inner-container .additional-details .education-box {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #3897ec;
+        display: flex;
+        flex-direction: column; }
+        .sign-up-container .inner-container .additional-details .education-box .ui.input {
+          margin-top: 1rem;
+          width: 340.9px;
+          height: 41px;
+          border-radius: 4px; }
+          .sign-up-container .inner-container .additional-details .education-box .ui.input > input {
+            background-color: #f1f3f4;
+            border: none; }
+            .sign-up-container .inner-container .additional-details .education-box .ui.input > input::placeholder {
+              color: #3897ec; }
+        .sign-up-container .inner-container .additional-details .education-box .input-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          .sign-up-container .inner-container .additional-details .education-box .input-container .ui.input {
+            margin-top: 1rem;
+            width: 340.9px;
+            height: 41px;
+            border-radius: 4px;
+            margin-right: 0.5rem; }
+            .sign-up-container .inner-container .additional-details .education-box .input-container .ui.input > input {
+              background-color: #f1f3f4;
+              border: none; }
+              .sign-up-container .inner-container .additional-details .education-box .input-container .ui.input > input::placeholder {
+                color: #3897ec; }
   .sign-up-container .btn {
     width: 795.7px;
     margin: 0 auto;
